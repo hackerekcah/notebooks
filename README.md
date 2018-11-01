@@ -1,2 +1,2 @@
 # notebooks
-jupyter notebooks
+Notes for learning things
