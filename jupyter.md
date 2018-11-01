@@ -15,6 +15,6 @@ python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 - what is kernelspec  
 each kernelspec is a directory installed by ipykernel, contains configuration of a kernel
 - list available kernelspecs  
-`jupyter kernelspec list`
+    jupyter kernelspec list
 - delete a kernel spec  
 delete the kernelspec directory
