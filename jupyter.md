@@ -13,6 +13,6 @@ Jupyter Notebook is an web app, part of Jupyter project
     FAQ: what is kernelspec
     each kernelspec is a directory installed by ipykernel, contains configuration of a kernel
     FAQ: list available kernelspecs
-    `jupyter kernelspec list`
+`jupyter kernelspec list`
     FAQ: delete a kernel spec
     delete the kernelspec directory
