@@ -12,9 +12,9 @@ source activate myenv
 python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 ```
 ## 3.2 [Kernel Specs](https://jupyter-client.readthedocs.io/en/latest/kernels.html#kernelspecs)
-- what is kernelspec
-  each kernelspec is a directory installed by ipykernel, contains configuration of a kernel
-- list available kernelspecs
+- what is kernelspec  
+each kernelspec is a directory installed by ipykernel, contains configuration of a kernel
+- list available kernelspecs  
 `jupyter kernelspec list`
-- delete a kernel spec
+- delete a kernel spec  
 delete the kernelspec directory
