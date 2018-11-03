@@ -32,6 +32,15 @@ PyTorch could use GPU acceleration.
 * weight sharing by reusing the same Module instance multi-times in forward pass
 
 ## torch.Tensor
+### [Attributes](https://pytorch.org/docs/stable/tensor_attributes.html)
+* torch.dtype
+* torch.device
+ * device type and ordinal, e.g. torch.device("cpu") / torch.device("cuda:0")
+ * specify by string('cuda:0'), by torch.device('cuda:0'), or by int(0)(*legacy*) 
+ * if not specify ordinal, then torch.cuda.current_device() will be used
+* torch.layout: memory layout of the tensor
 ### Tensor creation
 * if already have tensor myt, create a new with similar type but diff size by myt.new_\*() methods
   * .new_full(size,...) / .new_ones(size,...) / .new_empty(size,...) / .new_zeros(size,...) 
+* if pre-existing data
+ * torch.tensor()
