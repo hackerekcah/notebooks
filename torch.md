@@ -5,7 +5,7 @@ conda create -n torch3 python=3.6 pip
 conda install pytorch torchvision -c pytorch
 ```
 ## 2. PyTorch vs Numpy
-PyTorch could use GPU acceleration.
+* PyTorch could use GPU acceleration.
 
 ## 3.autograd package
 * Forword pass will build a computation graph, autograd will do automatic differenciation on this graph
