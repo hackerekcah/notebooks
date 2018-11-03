@@ -18,27 +18,27 @@ conda install pytorch torchvision -c pytorch
 * Modules could have Modules inside, which will construct a tree-like hiearachy inside.
 * User defined model should subclass Module class
 ### 4.1 Methods
-* .parameters() return all learnable parameters as a generator
-* .zero_grad() zeros all parameters' grad
-* .to(torch.device/torch.dtype/torch.tensor) move parameters & buffers to device/dtype/tensor(i.e. device+dtype) (modify in-place)
-* .cuda(device) / .cpu() move paramters & buffers to gpu / cpu
-* .modules() / .children() / .named_modules() / .named_children() / .named_parameters()
-* .apply(fn) apply function recursively to each Modules inside
+* `.parameters()` return all learnable parameters as a generator
+* `.zero_grad()` zeros all parameters' grad
+* `.to(torch.device/torch.dtype/torch.tensor)` move parameters & buffers to device/dtype/tensor(i.e. device+dtype) (modify in-place)
+* `.cuda(device) / .cpu()` move paramters & buffers to gpu / cpu
+* `.modules() / .children() / .named_modules() / .named_children() / .named_parameters()`
+* `.apply(fn)` apply function recursively to each Modules inside
 
 ## 5.Control flow and dynamic graph
 * Each forward pass will define a graph on the fly (dynamicly), thus could use python control flow (if / for etc.)
 
 ## 6.Weight sharing
-* weight sharing by reusing the same Module instance multi-times in forward pass
+* weight sharing by reusing the same `Module` instance multi-times in forward pass
 
 ## 7.torch.Tensor
 ### [Attributes](https://pytorch.org/docs/stable/tensor_attributes.html)
-* torch.dtype
-* torch.device
+* `torch.dtype`
+* `torch.device`
   * device type and ordinal, e.g. torch.device("cpu") / torch.device("cuda:0")
   * specify by string('cuda:0'), by torch.device('cuda:0'), or by int(0)(*legacy*) 
   * if not specify ordinal, then torch.cuda.current_device() will be used
-* torch.layout: memory layout of the tensor
+* `torch.layout`: memory layout of the tensor
 ### Tensor creation
 * if already have tensor myt, create a new with similar type but diff size by myt.new_\*() methods
   * .new_full(size,...) / .new_ones(size,...) / .new_empty(size,...) / .new_zeros(size,...) 
