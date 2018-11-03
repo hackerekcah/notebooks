@@ -31,7 +31,7 @@ PyTorch could use GPU acceleration.
 ## 6.Weight sharing
 * weight sharing by reusing the same Module instance multi-times in forward pass
 
-## torch.Tensor
+## 7.torch.Tensor
 ### [Attributes](https://pytorch.org/docs/stable/tensor_attributes.html)
 * torch.dtype
 * torch.device
@@ -44,3 +44,36 @@ PyTorch could use GPU acceleration.
   * .new_full(size,...) / .new_ones(size,...) / .new_empty(size,...) / .new_zeros(size,...) 
 * if pre-existing data
  * torch.tensor()
+ 
+ ## 8. [Model Save and Load](https://pytorch.org/tutorials/beginner/saving_loading_models.html#)
+ ### 8.1 save and load model parameters (recommended)
+ * convention: mypath end with *.pt* / *.pth*
+ ```
+ torch.save(model.state_dict(),mypath)
+ mymodel.load_state_dict(torch.load(path))
+ ```
+ ### 8.2 save and load whole model
+ * convention: mypath end with *.pt* / *.pth*
+ ```
+ torch.save(mymodel, mypath)
+ mymodel = torch.load(mypath)
+ ```
+ 
+ ### 8.3 torch.optim also has .state_dict() methods
+ ### 8.4 save a general checkpoint, save a dict
+ * convention: PATH end with *.tar*
+ ```
+ torch.save({
+            'epoch': epoch,
+            'model_state_dict': model.state_dict(),
+            'optimizer_state_dict': optimizer.state_dict(),
+            'loss': loss,
+            ...
+            }, PATH)
+```
+### 8.5 load partial model / partial parameters, set *strict=False*
+```
+modelB.load_state_dict(torch.load(PATH), strict=False)
+```
+### 8.6 save&load cross device
+`torch.load(PATH, map_location=device)
