@@ -17,7 +17,7 @@ conda install pytorch torchvision -c pytorch
 * Resemble the concept of layers, define forward computation and hold learnable parameters (internel state).
 * Modules could have Modules inside, which will construct a tree-like hiearachy inside.
 * User defined model should subclass Module class
-### 4.1Methods
+### 4.1 Methods
 * .parameters() return all learnable parameters as a generator
 * .zero_grad() zeros all parameters' grad
 * .to(torch.device/torch.dtype/torch.tensor) move parameters & buffers to device/dtype/tensor(i.e. device+dtype) (modify in-place)
