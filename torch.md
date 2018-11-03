@@ -30,3 +30,8 @@ PyTorch could use GPU acceleration.
 
 ## 6.Weight sharing
 * weight sharing by reusing the same Module instance multi-times in forward pass
+
+## torch.Tensor
+### Tensor creation
+* if already have tensor myt, create a new with similar type but diff size by myt.new_\* methods
+** .new_full(size,...) / .new_ones(size,...) / .new_empty(size,...) / .new_zeros(size,...) 
