@@ -43,7 +43,7 @@ conda install pytorch torchvision -c pytorch
 * if already have tensor myt, create a new with similar type but diff size by myt.new_\*() methods
   * .new_full(size,...) / .new_ones(size,...) / .new_empty(size,...) / .new_zeros(size,...) 
 * if pre-existing data
- * torch.tensor()
+  * torch.tensor()
  
  ## 8. [Model Save and Load](https://pytorch.org/tutorials/beginner/saving_loading_models.html#)
  ### 8.1 save and load model parameters (recommended)
@@ -86,11 +86,12 @@ model.load_state_dict(torch.load(PATH, map_location=device))
 device = torch.device("cuda:1")
 model.load_state_dict(torch.load(PATH))
 model.to(device)
-input = input.to(device)
+input = input.to(device) # move input to device and overide
 ```
 * if save on CPU, load on GPU
 ```
 device = torch.device("cuda")
 model.load_state_dict(torch.load(PATH, map_location="cuda:0"))
 model.to(device)
+input = input.to(device) # move input to device and overide
 ```
