@@ -76,4 +76,9 @@ PyTorch could use GPU acceleration.
 modelB.load_state_dict(torch.load(PATH), strict=False)
 ```
 ### 8.6 save&load cross device
-`torch.load(PATH, map_location=device)
+* if save on GPU, load on CPU
+    device = torch.device("cpu")
+    torch.load(PATH, map_location=device)
+* if save on GPU, load on GPU
+    model.load_state_dict(torch.load(PATH))
+    model.to(device)
