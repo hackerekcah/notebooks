@@ -77,14 +77,20 @@ modelB.load_state_dict(torch.load(PATH), strict=False)
 ```
 ### 8.6 save&load cross device, see [torch.load](https://pytorch.org/docs/stable/torch.html#torch.load)
 * if save on GPU, load on CPU
-    device = torch.device("cpu")
-    model.load_state_dict(torch.load(PATH, map_location=device))
+```
+device = torch.device("cpu")
+model.load_state_dict(torch.load(PATH, map_location=device))
+```
 * if save on GPU, load on GPU
-    device = torch.device("cuda:1")
-    model.load_state_dict(torch.load(PATH))
-    model.to(device)
-    input = input.to(device)
+```
+device = torch.device("cuda:1")
+model.load_state_dict(torch.load(PATH))
+model.to(device)
+input = input.to(device)
+```
 * if save on CPU, load on GPU
-    device = torch.device("cuda")
-    model.load_state_dict(torch.load(PATH, map_location="cuda:0"))
-    model.to(device)
+```
+device = torch.device("cuda")
+model.load_state_dict(torch.load(PATH, map_location="cuda:0"))
+model.to(device)
+```
