@@ -33,5 +33,5 @@ PyTorch could use GPU acceleration.
 
 ## torch.Tensor
 ### Tensor creation
-* if already have tensor myt, create a new with similar type but diff size by myt.new_\* methods
-** .new_full(size,...) / .new_ones(size,...) / .new_empty(size,...) / .new_zeros(size,...) 
+* if already have tensor myt, create a new with similar type but diff size by myt.new_\*() methods
+  * .new_full(size,...) / .new_ones(size,...) / .new_empty(size,...) / .new_zeros(size,...) 
