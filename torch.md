@@ -5,12 +5,24 @@ conda create -n torch3 python=3.6 pip
 conda install pytorch torchvision -c pytorch
 ```
 ## 2. PyTorch vs Numpy
-* PyTorch could use GPU acceleration.
+* Conceptually the same, BUT, PyTorch could use GPU acceleration.
+* Tenosr to numpy (**NOTE: share same memory**):
+` b = a.numpy()`
+* numpy to tensor (**NOTE: share same memory**):
+` b = torch.from_numpy(a)`
 
 ## 3.autograd package
+### 3.1 basics
 * Forword pass will build a computation graph, autograd will do automatic differenciation on this graph
 * Each operator of the computation graph should be an autograd operator/function
 * We could define our own autograd function by inheriting torch.autograd.Function class, and define forword and backword methods
+### 3.2 record history
+* Each tensor has `.grad` `.requires_grad` attribute
+	* `.grad` accumulate gradient if `.requires_grad == True`
+	* set `a.requires_grad_ = True` to change attributes in-place
+* [`b = a.detach()` vs `b = a.data`](https://pytorch.org/blog/pytorch-0_4_0-migration-guide/#what-about-data)
+	* operation on `b` will not be recorded in autograd history, however change `b` in-place will affect `a`
+	* `.detach()` guarentee to be safe, i.e. if changed `b` in-place, when `.backward()` through `a` will trigure error
 
 ## 4.[torch.nn.Module](https://pytorch.org/docs/stable/nn.html#torch.nn.Module)
 * Porvide high level api above Tensor and autograd.
@@ -42,8 +54,10 @@ conda install pytorch torchvision -c pytorch
 ### Tensor creation
 * if already have tensor myt, create a new with similar type but diff size by myt.new_\*() methods
   * .new_full(size,...) / .new_ones(size,...) / .new_empty(size,...) / .new_zeros(size,...) 
-* if pre-existing data
-  * torch.tensor()
+* create tensor with same attribute (size, requires_grad...)
+	* `torch.*_like()` / `a.*_like()`
+* if pre-existing data, `torch.tensor()` is lke `numpy.array()`
+  * `torch.tensor(data...)`, copies data and new a tensor
  
  ## 8. [Model Save and Load](https://pytorch.org/tutorials/beginner/saving_loading_models.html#)
  ### 8.1 save and load model parameters (recommended)
