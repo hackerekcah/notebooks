@@ -16,7 +16,7 @@ foo = decorator(foo)
 def foo:
   pass
 ```
-* Complicated Use Case: Nested decorator which return decorator given arguments
+* Complicated Use Case: Nested decorator which return decorator given arguments[more](https://www.codementor.io/sheena/advanced-use-python-decorators-class-function-du107nxsv)
 ```
 def outer_decorator(*outer_args,**outer_kwargs):                            
     def decorator(fn):                                            
