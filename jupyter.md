@@ -30,7 +30,7 @@ Magic commands start with %
 or
 %set_env CUDA_VISIBLE_DEVICES 5
 ```
-* matplotlib show plot
+* matplotlib show plot  
 	%matplotlib inline
 * print info an object
 	%pinfo \[obj\] / %pinfo2 \[obj\]
