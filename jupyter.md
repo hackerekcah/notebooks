@@ -30,18 +30,30 @@ Magic commands start with %
 or
 %set_env CUDA_VISIBLE_DEVICES 5
 ```
-* matplotlib show plot  
-	%matplotlib inline
+* matplotlib show plot
+```
+%matplotlib inline
+```
 * print info an object
-	%pinfo \[obj\] / %pinfo2 \[obj\]
-	same as: obj? / obj??
+```
+%pinfo \[obj\] / %pinfo2 \[obj\]
+same as: obj? / obj??
+```
 * print signature of a callable
-	%pdef \[callable\]
+```
+%pdef \[callable\]
+```
 * import numpy, matplotlib and activate interactive support
-	%pylab
+```
+%pylab
+```
 * run shell command
-	!COMMAND #run command
-	!!COMMAND #run command and get output as a list
+```
+!COMMAND #run command
+!!COMMAND #run command and get output as a list
+```
 * print variables
-	%who	#pirnt interactive variables
-	%whos	#print interactive variables, with extra infomation
+```
+%who	#pirnt interactive variables
+%whos	#print interactive variables, with extra infomation
+```
