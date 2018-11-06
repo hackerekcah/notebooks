@@ -57,3 +57,7 @@ same as: obj? / obj??
 %who	#pirnt interactive variables
 %whos	#print interactive variables, with extra infomation
 ```
+* config autocomplete
+```
+%config IPCompleter.greedy=True
+```
