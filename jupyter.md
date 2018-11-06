@@ -25,9 +25,11 @@ delete the kernelspec directory
 Magic commands start with %
 ## 4.1 Line magics
 * set up env
-	%env CUDA_VISIBLE_DEVICES 5
-	or
-	%set_env CUDA_VISIBLE_DEVICES 5
+```
+%env CUDA_VISIBLE_DEVICES 5
+or
+%set_env CUDA_VISIBLE_DEVICES 5
+```
 * matplotlib show plot
 	%matplotlib inline
 * print info an object
