@@ -20,3 +20,26 @@ jupyter kernelspec list
 ````
 - delete a kernel spec  
 delete the kernelspec directory
+
+# 4 [Migics in Ipython](https://ipython.readthedocs.io/en/stable/interactive/magics.html)
+Magic commands start with %
+## 4.1 Line magics
+* set up env
+	%env CUDA_VISIBLE_DEVICES 5
+	or
+	%set_env CUDA_VISIBLE_DEVICES 5
+* matplotlib show plot
+	%matplotlib inline
+* print info an object
+	%pinfo \[obj\] / %pinfo2 \[obj\]
+	same as: obj? / obj??
+* print signature of a callable
+	%pdef \[callable\]
+* import numpy, matplotlib and activate interactive support
+	%pylab
+* run shell command
+	!COMMAND #run command
+	!!COMMAND #run command and get output as a list
+* print variables
+	%who	#pirnt interactive variables
+	%whos	#print interactive variables, with extra infomation
