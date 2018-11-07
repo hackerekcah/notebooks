@@ -142,11 +142,11 @@ class MyTransformClass:
 tsfm = MyTransformClass(params)
 transformed_sample = tsfm(sample)
 ```
-  * could also compose transform and input to `Dataset` object
-```
-composed = transforms.Compose([Rescale(256),
-                               RandomCrop(224)])
-```
+	* could also compose transform and input to `Dataset` object
+	```
+	composed = transforms.Compose([Rescale(256),
+				       RandomCrop(224)])
+	```
 ### 10.4 `DataLoader` How?
 ```
 dataloader = DataLoader(transformed_dataset, batch_size=4,
