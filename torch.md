@@ -109,3 +109,44 @@ model.load_state_dict(torch.load(PATH, map_location="cuda:0"))
 model.to(device)
 input = input.to(device) # move input to device and overide
 ```
+## 9. Weight initialization
+## 10. [Data Loading & Processing](https://pytorch.org/tutorials/beginner/data_loading_tutorial.html)
+### 10.1related class
+`from torch.utils.data import Dataset, DataLoader` 
+### 10.2 What?  
+`Dataset`: sample indexing & transform
+`DataLoader`: batching, shuffle, parallel loading
+### 10.3 `Dataset` How?
+* 1.define a new class inheriting `Dataset`
+* 2.impleting `__len__`, `__getitem__`, perform binded `transformation` when return sample
+```
+class FaceLandmarksDataset(Dataset):
+    def __init__(self, csv_file, root_dir, transform=None):
+        self.transform = transform
+
+    def __len__(self):
+        return len(self.landmarks_frame)
+
+    def __getitem__(self, idx):
+        if self.transform:
+            sample = self.transform(sample)
+        return sample
+```
+* 3. Define *callable* transform class, and input to `Dataset` object
+```
+tsfm = MyTransformClass(params) #just define __call__ method in MyTransformClass
+transformed_sample = tsfm(sample)
+```
+** could also compose transform and input to `Dataset` object
+```
+composed = transforms.Compose([Rescale(256),
+                               RandomCrop(224)])
+```
+### 10.4 `DataLoader` How?
+```
+dataloader = DataLoader(transformed_dataset, batch_size=4,
+                        shuffle=True, num_workers=4)
+			
+for i_batch, sample_batched in enumerate(dataloader):
+	pass
+```
