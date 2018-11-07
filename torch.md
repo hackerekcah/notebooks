@@ -134,10 +134,15 @@ class FaceLandmarksDataset(Dataset):
 ```
 * 3. Define *callable* transform class, and input to `Dataset` object
 ```
-tsfm = MyTransformClass(params) #just define __call__ method in MyTransformClass
+class MyTransformClass:
+	#define __call__ to make class callable
+	def __call__(self, sample):
+		pass
+
+tsfm = MyTransformClass(params)
 transformed_sample = tsfm(sample)
 ```
-** could also compose transform and input to `Dataset` object
+  * could also compose transform and input to `Dataset` object
 ```
 composed = transforms.Compose([Rescale(256),
                                RandomCrop(224)])
@@ -145,7 +150,7 @@ composed = transforms.Compose([Rescale(256),
 ### 10.4 `DataLoader` How?
 ```
 dataloader = DataLoader(transformed_dataset, batch_size=4,
-                        shuffle=True, num_workers=4)
+                    	shuffle=True, num_workers=4)
 			
 for i_batch, sample_batched in enumerate(dataloader):
 	pass
