@@ -117,8 +117,8 @@ input = input.to(device) # move input to device and overide
 `Dataset`: sample indexing & transform
 `DataLoader`: batching, shuffle, parallel loading
 ### 10.3 `Dataset` How?
-* 1. define a new class inheriting `Dataset`
-* 2. impleting `__len__`, `__getitem__`, perform binded `transformation` when return sample
+* 1.define a new class inheriting `Dataset`
+* 2.impleting `__len__`, `__getitem__`, perform binded `transformation` when return sample
 ```
 class FaceLandmarksDataset(Dataset):
     def __init__(self, csv_file, root_dir, transform=None):
@@ -132,7 +132,7 @@ class FaceLandmarksDataset(Dataset):
             sample = self.transform(sample)
         return sample
 ```
-* 3. Define *callable* transform class, and input to `Dataset` object
+* 3.Define *callable* transform class, and input to `Dataset` object
 ```
 class MyTransformClass:
 	#define __call__ to make class callable
@@ -142,11 +142,11 @@ class MyTransformClass:
 tsfm = MyTransformClass(params)
 transformed_sample = tsfm(sample)
 ```
-	* could also compose transform and input to `Dataset` object
-	```
-	composed = transforms.Compose([Rescale(256),
-				       RandomCrop(224)])
-	```
+* 3.1could also compose transform and input to `Dataset` object
+```
+composed = transforms.Compose([Rescale(256),
+			       RandomCrop(224)])
+```
 ### 10.4 `DataLoader` How?
 ```
 dataloader = DataLoader(transformed_dataset, batch_size=4,
