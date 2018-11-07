@@ -117,8 +117,8 @@ input = input.to(device) # move input to device and overide
 `Dataset`: sample indexing & transform
 `DataLoader`: batching, shuffle, parallel loading
 ### 10.3 `Dataset` How?
-* 1.define a new class inheriting `Dataset`
-* 2.impleting `__len__`, `__getitem__`, perform binded `transformation` when return sample
+* 1. define a new class inheriting `Dataset`
+* 2. impleting `__len__`, `__getitem__`, perform binded `transformation` when return sample
 ```
 class FaceLandmarksDataset(Dataset):
     def __init__(self, csv_file, root_dir, transform=None):
