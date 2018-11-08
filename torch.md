@@ -54,7 +54,9 @@ conda install pytorch torchvision -c pytorch
 ### Tensor metadata
 * `mt.size()` / `mt.shape` # same output
 * `mt.type()` / `mt.dtype` # sampe output
-* type conversion: [`x.type(torch.FloatTensor)`](https://pytorch.org/docs/stable/tensors.html#torch.Tensor.type)
+* type conversion: [`.type(dtype)`](https://pytorch.org/docs/stable/tensors.html#torch.Tensor.type) methods
+    * `x.type(torch.FloatTensor)` # convert to FloatTensor
+    * `x.as_type(y)` # convert to same dtype as y
     * see a list of torch [dtypes](https://pytorch.org/docs/stable/tensors.html)
 ### Tensor creation
 * torch.Tensor(2,3) is a simplification of torch.FloatTensor(2,3) # uninitialized
@@ -175,6 +177,7 @@ for i_batch, sample_batched in enumerate(dataloader):
 criterion = torch.nn.CrossEntropyLoss()
 criterion(logits, target)
 ```
+#see mnist [example](https://github.com/pytorch/examples/tree/master/mnist)
 ```
 log_pred = F.log_softmax(logits, dim=1)
 loss = F.nll_loss(log_pred, target)
