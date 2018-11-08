@@ -170,9 +170,9 @@ for i_batch, sample_batched in enumerate(dataloader):
 	pass
 ```
 ### 11. Losses
-#### [CrossEntropy](https://github.com/hackerekcah/notebooks/blob/master/cross_entropy.ipynb)
+#### 11.1[CrossEntropy](https://github.com/hackerekcah/notebooks/blob/master/cross_entropy.ipynb)
 * The following two way both ok
-* `target`: need to be `torch.LongTensor` type, not one-hot but `int` labels
+    * `target`: need to be `torch.LongTensor` type, not one-hot but `int` labels
 ```
 criterion = torch.nn.CrossEntropyLoss()
 criterion(logits, target)
