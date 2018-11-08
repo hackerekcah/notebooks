@@ -53,7 +53,9 @@ conda install pytorch torchvision -c pytorch
 * `torch.layout`: memory layout of the tensor
 ### Tensor metadata
 * `mt.size()` / `mt.shape` # same output
-* 
+* `mt.type()` / `mt.dtype` # sampe output
+* type conversion: [`x.type(torch.FloatTensor)`](https://pytorch.org/docs/stable/tensors.html#torch.Tensor.type)
+    * see a list of torch [dtypes](https://pytorch.org/docs/stable/tensors.html)
 ### Tensor creation
 * torch.Tensor(2,3) is a simplification of torch.FloatTensor(2,3) # uninitialized
 * if already have tensor myt, create a new with similar type but diff size by myt.new_\*() methods
