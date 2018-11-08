@@ -165,3 +165,15 @@ dataloader = DataLoader(transformed_dataset, batch_size=4,
 for i_batch, sample_batched in enumerate(dataloader):
 	pass
 ```
+### 11. Losses
+#### CrossEntropy
+* The following two way both ok
+* `target`: need to be `torch.LongTensor` type, not one-hot but `int` labels
+```
+criterion = torch.nn.CrossEntropyLoss()
+criterion(logits, target)
+```
+```
+out = F.log_softmax(logits, dim=1)
+loss = F.nll_loss(out, target)
+```
