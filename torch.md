@@ -43,7 +43,7 @@ conda install pytorch torchvision -c pytorch
 ## 6.Weight sharing
 * weight sharing by reusing the same `Module` instance multi-times in forward pass
 
-## 7.torch.Tensor
+## 7.torch.Tensor (see [examples](https://jhui.github.io/2018/02/09/PyTorch-Basic-operations/))
 ### [Attributes](https://pytorch.org/docs/stable/tensor_attributes.html)
 * `torch.dtype`
 * `torch.device`
@@ -51,14 +51,24 @@ conda install pytorch torchvision -c pytorch
   * specify by string('cuda:0'), by torch.device('cuda:0'), or by int(0)(*legacy*) 
   * if not specify ordinal, then torch.cuda.current_device() will be used
 * `torch.layout`: memory layout of the tensor
+### Tensor metadata
+* `mt.size()` / `mt.shape` # same output
+* 
 ### Tensor creation
+* torch.Tensor(2,3) is a simplification of torch.FloatTensor(2,3) # uninitialized
 * if already have tensor myt, create a new with similar type but diff size by myt.new_\*() methods
   * .new_full(size,...) / .new_ones(size,...) / .new_empty(size,...) / .new_zeros(size,...) 
 * create tensor with same attribute (size, requires_grad...)
 	* `torch.*_like()` / `a.*_like()`
 * if pre-existing data, `torch.tensor()` is lke `numpy.array()`
   * `torch.tensor(data...)`, copies data and new a tensor
- 
+### Random initialized tensor
+```
+torch.manual_seed(1)	# reproducibility
+v = torch.rand(2, 3)            # Initialize with random number (uniform distribution)
+v = torch.randn(2, 3)           # With normal distribution (SD=1, mean=0)
+v = torch.randperm(4)           # Size 4. Random permutation of integers from 0 to 3
+```
  ## 8. [Model Save and Load](https://pytorch.org/tutorials/beginner/saving_loading_models.html#)
  ### 8.1 save and load model parameters (recommended)
  * convention: mypath end with *.pt* / *.pth*
