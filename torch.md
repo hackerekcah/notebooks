@@ -182,3 +182,15 @@ criterion(logits, target)
 log_pred = F.log_softmax(logits, dim=1)
 loss = F.nll_loss(log_pred, target)
 ```
+### 12. random number generator
+#### 12.1 get/set cpu/cuda rng state
+```
+>>> print(torch.get_rng_state(), torch.get_rng_state().size())
+tensor([ 41, 118,   0,  ...,   0,   0,   0], dtype=torch.uint8) torch.Size([5048])
+
+>>> print(torch.cuda.get_rng_state(4), torch.cuda.get_rng_state(4).size())
+tensor([  8, 163, 175,  ...,   0,   0,   0], dtype=torch.uint8) torch.Size([824016])
+
+>>> print(torch.cuda.get_rng_state(5), torch.cuda.get_rng_state(5).size())
+tensor([178, 199, 104,  ...,   0,   0,   0], dtype=torch.uint8) torch.Size([824016])
+```
