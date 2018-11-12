@@ -63,6 +63,7 @@ same as: obj? / obj??
 ```
 5. Extentions
 * [autoreload](https://ipython.org/ipython-doc/3/config/extensions/autoreload.html)
+automatically reload changes of the python files
 ```
 %load_ext autoreload
 %autoreload 2 #autoreload all modules
