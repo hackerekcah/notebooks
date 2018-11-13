@@ -61,7 +61,7 @@ same as: obj? / obj??
 ```
 %config IPCompleter.greedy=True
 ```
-5. Extentions
+# 5. Extentions
 * [autoreload](https://ipython.org/ipython-doc/3/config/extensions/autoreload.html)
 automatically reload changes of the python files
 ```
