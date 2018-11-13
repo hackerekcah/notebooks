@@ -33,3 +33,21 @@ def foo(a,b,c):
     print c
 foo()
 ```
+## Matplotlib
+### Interactive Mode
+plt.plot() method will not plot to screen by default, unless call plt.show()
+interactively means each time add something to the plot.
+* check if interactive mode on
+```
+matplotlib.is_interactive()
+```
+* turn on
+```
+matplotlib.pyplot.ion()
+# or
+matplotlib.interactive()
+```
+* turn off
+```
+matplotlib.pyplot.ioff()
+```
