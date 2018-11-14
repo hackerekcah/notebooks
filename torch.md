@@ -174,8 +174,13 @@ for i_batch, sample_batched in enumerate(dataloader):
 * The following two way both ok
     * `target`: need to be `torch.LongTensor` type, not one-hot but `int` labels
 ```
+# by default, return mean loss of the observations in a minibatch
 criterion = torch.nn.CrossEntropyLoss()
-criterion(logits, target)
+
+# alternatively, return sum loss of the observations in a minibatch, by set `reduction='sum'`
+# criterion = torch.nn.CrossEntropyLoss(reduction='sum')
+
+loss = criterion(logits, target)
 ```
 #see mnist [example](https://github.com/pytorch/examples/tree/master/mnist)
 ```
