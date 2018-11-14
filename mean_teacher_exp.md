@@ -19,13 +19,13 @@ combine 1 batch from src domain and 1 batch from dst domain, concat and feed tog
     * Thus BatchNorm layer will use stats from both distributions, which would probably be bad.  
     * Calculate consistency loss from both labeled src domain and unlabeled dst domain
     
-* unsup_weight
+* unsup_weight  
 default to 3, why?
 ```
 loss_expr = clf_loss + unsup_loss * unsup_weight
 ```
 
-* `compute_aug_loss`
+* `compute_aug_loss`  
 given student prob and teacher prob, calc consistency loss
 
 
