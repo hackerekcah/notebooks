@@ -88,7 +88,7 @@ p = (1,2,3)
 f(*p)
 ```
 
-** double star to unpack a dictionary as like key words input
+* double star to unpack a dictionary as like key words input
 ```
 def f(x,y,z):
   print(x,y,z)
