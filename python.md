@@ -59,3 +59,47 @@ start_time = timeit.default_timer()
 # code you want to evaluate
 elapsed = timeit.default_timer() - start_time
 ```
+
+## function arguments
+### func def
+* arbitrary number of arguments, single star
+```
+def f(*args)
+  print(args)
+  
+f(1,2,'x')
+
+```
+* arbitrary number of key word arguments, double star
+```
+def f(**kwargs)
+  print(kwargs)
+  
+f('arg1'=hello)
+```
+
+### function call
+* single star to unpack a tuple as positional arguments
+```
+def f(x,y,z):
+  print(x,y,z)
+
+p = (1,2,3)
+f(*p)
+```
+
+** double star to unpack a dictionary as like key words input
+```
+def f(x,y,z):
+  print(x,y,z)
+  
+p = {y:1, x:2, z:4}
+f(**p)
+```
+
+### get arguments of a function
+```
+# inside function
+saved_args = locals()
+print(saved_args)
+```
