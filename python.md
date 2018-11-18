@@ -51,3 +51,11 @@ matplotlib.interactive()
 ```
 matplotlib.pyplot.ioff()
 ```
+
+## Run time
+```
+import timeit
+start_time = timeit.default_timer()
+# code you want to evaluate
+elapsed = timeit.default_timer() - start_time
+```
