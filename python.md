@@ -75,7 +75,7 @@ f(1,2,'x')
 def f(**kwargs)
   print(kwargs)
   
-f('arg1'=hello)
+f(arg1=hello)
 ```
 
 ### function call
@@ -93,7 +93,7 @@ f(*p)
 def f(x,y,z):
   print(x,y,z)
   
-p = {y:1, x:2, z:4}
+p = {'y':1, 'x':2, 'z':4}
 f(**p)
 ```
 
