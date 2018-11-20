@@ -16,7 +16,7 @@ foo = decorator(foo)
 def foo:
   pass
 ```
-* Complicated Use Case: Nested decorator which return decorator given arguments[more](https://www.codementor.io/sheena/advanced-use-python-decorators-class-function-du107nxsv)
+* Complicated Use Case: Nested decorator which return decorator given arguments. [more](https://www.codementor.io/sheena/advanced-use-python-decorators-class-function-du107nxsv)
 ```
 def outer_decorator(*outer_args,**outer_kwargs):                            
     def decorator(fn):                                            
@@ -35,7 +35,7 @@ foo()
 ```
 ## Matplotlib
 ### Interactive Mode
-plt.plot() method will not plot to screen by default, unless call plt.show()
+plt.plot() method will not plot to screen by default, unless call plt.show()  
 interactively means each time add something to the plot.
 * check if interactive mode on
 ```
