@@ -37,7 +37,7 @@ git push <remote> --all #push all braches
 * think with in mind **3 threes in git**: working directory, staged snapshot, commit history
 ### `reset` vs `checkout`
 * `reset` move **three threes** to match a specific commit
-* `checkout` move HEAD ref point to commit
+* `checkout` move HEAD ref point to commit, must commit or stash any changes before using it
 ### `reset`
 * control what to match by option
 ```
