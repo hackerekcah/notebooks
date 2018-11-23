@@ -135,6 +135,27 @@ ORIG_HEAD
 ```
 git show HEAD~2
 ```
+## 8. [`merge`](https://git-scm.com/docs/git-merge)
+merge history of another branch/commit to current branch
+### merge
+```
+git merge     # without <commit> arg, will merge traching upstream
+git merge MERGE_HEAD #merge commit from .git/MERGE_HEAD, which is created by last `git fetch`
+```
+### Fast-Forward Merge
+* a special merge, that current branch tip is ancestor of the named commit.
+* Fast-Forward Merge will not generate merge commit
+
+### Conflict presentation 
+* `<<<<<<`: yours
+* `=====` : split line
+* `>>>>>` : theirs
+
+### Merge Conflict, abort or resolve
+* when met conflict, can abort with 'git merge --abort'
+
+### merge strategy
+* specify using `-s`, possible strategy are `resolve`,`recursive(by default)`,`octopus` and some more
 
 ## -1. QA
 * 查看目前状态
