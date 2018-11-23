@@ -1,4 +1,10 @@
 # Learning Git
+## 0. Three trees of git
+### working directory:
+### index
+* temporary area to prepare next commit
+* stores `snapshots of changes` to be commited
+### HEAD
 ## 1. collaborating
 ### `remote`: manage `repository` connection info
 ```
@@ -65,7 +71,72 @@ git rebase master
 * `rebase`, add brand new commit, destructive, but looks cleaner
 * `rebase` is useful to rewrite history of a prifvate branch, never use it in publich branch
 
-## 4. Common
+## 4. 'Stash'
+* wanna a save of current working dir and index, but not commit
+* after stash, working dir is clean, matching HEAD
+* list, show, apply
+```
+git stash list  #list stack stack
+git stash apply stash@{0}   #apply the most recent stash
+git stash drop              #drop the last stash from stack
+```
+* stash before pull to avoid warning, stash back what is working on
+```
+git stash
+git pull
+git stash pop   # == git apply + git drop
+```
+
+## 5. `git rm`
+* remove file from `index` or both `working tree and index`
+* file to be removed must be identical to `tip of the brach`, unless use --cache
+```
+# --cached: remove index only, not directory, -- just indicate files are file not command
+git rm --cached -- <files>
+```
+
+## 6. `branch`: list, create, delete branch
+* list
+```
+git branch
+# or
+git branch --list
+```
+* create
+```
+git branch <new_brach>   # new a branch, will not checkout automatically
+```
+* rename
+```
+git branch -m <old> <new> # use -D if <new> already exists
+```
+* delete
+```
+git branch -d <branch>  # -D == --delete + --force
+```
+
+## 7. `.git/refs`, git is all about commits, refs makes it easy to refer to a commit, like pointer
+* forms fo refs: `hashes`, `tags`, `branch`
+* tip of branch is stored in `.git/refs/heads/<branch>`
+### special refs
+* in directory `.git/` could find these
+```
+HEAD
+FETCH_HEAD
+ORIG_HEAD
+...
+```
+### `refspecs`
+* map local branch to remote branch
+* see `.git/config`, entries like \[+\]<src>: <dst>
+  
+### relative refs
+* grandparents of HEAD
+```
+git show HEAD~2
+```
+
+## -1. QA
 * 查看目前状态
 ```
 git status
@@ -98,3 +169,5 @@ on github, create a new repo, then:
 git remote add origin https://github.com/hackerekcah/xxxxxxx.git
 git push -u origin master
 ```
+
+
