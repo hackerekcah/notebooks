@@ -157,6 +157,15 @@ git merge MERGE_HEAD #merge commit from .git/MERGE_HEAD, which is created by las
 ### merge strategy
 * specify using `-s`, possible strategy are `resolve`,`recursive(by default)`,`octopus` and some more
 
+## 9. Config
+* caching github password using credential.helper, need to set cache time expire
+```
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+
+# after done this, will save credential on next push, and remember for 2hours
+```
+
 ## -1. QA
 * 查看目前状态
 ```
