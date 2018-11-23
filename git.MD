@@ -4,7 +4,7 @@
 ### index
 * temporary area to prepare next commit
 * stores `snapshots of changes` to be commited
-### HEAD
+### commit history
 ## 1. collaborating
 ### `remote`: manage `repository` connection info
 ```
