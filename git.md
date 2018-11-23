@@ -168,7 +168,7 @@ git config --global credential.helper 'cache --timeout=3600'
 ## 10.Workflow
 * new branch and checkout immediately
 ```
-git branch -b new_feature_branch
+git checkout -b new_feature_branch
 ```
 * push to remote
 ```
