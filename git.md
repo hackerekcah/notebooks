@@ -165,6 +165,34 @@ git config --global credential.helper 'cache --timeout=3600'
 
 # after done this, will save credential on next push, and remember for 2hours
 ```
+## 10.Workflow
+* new branch and checkout immediately
+```
+git branch -b new_feature_branch
+```
+* push to remote
+```
+git push origin new_feature_branch
+```
+* new a pull request and peer comment & review
+* merge in commandline
+```
+1. my-feature-branch up-to-date
+git checkout my-feature-branch
+git pull origin my-feature-branch
+2. up to date with master also, merge if necessary
+git pull origin master
+3. master up-to-date
+git checkout master
+git pull origin master
+git merge --no-ff my-feature-branch
+```
+* delete my-feature-branch both for `local` and `remote`
+```
+git branch -d my-feature-branch
+git push origin --delete my-feature-branch
+```
+
 
 ## -1. QA
 * 查看目前状态
