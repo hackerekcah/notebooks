@@ -175,6 +175,11 @@ git checkout -b new_feature_branch
 git push origin new_feature_branch
 ```
 * new a pull request and peer comment & review
+* others could pull new branch and checkout it
+```
+git pull    #by default, will pull new branch, but wont create local new branch by default
+git checkout new_feature_branch   # == git checkout -b new_feature_branch --track origin/new_feature_branch
+```
 * merge in commandline
 ```
 1. my-feature-branch up-to-date
@@ -192,6 +197,8 @@ git merge --no-ff my-feature-branch
 git branch -d my-feature-branch
 git push origin --delete my-feature-branch
 ```
+
+
 
 
 ## -1. QA
