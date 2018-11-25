@@ -218,6 +218,7 @@ git branch
 ```
 git checkout <branch-name>
 git checkout <commit-hash>
+git checkout -- <file>  # discard uncommited changes of a file
 ```
 * 丢掉目前的所有staged but uncommited changes,
 ```
@@ -234,5 +235,13 @@ on github, create a new repo, then:
 git remote add origin https://github.com/hackerekcah/xxxxxxx.git
 git push -u origin master
 ```
+
+* `cherry-pick`, designed to pick one/multipy existing commits of branch1 to apply to branch2
+```
+git checkout branch2
+git cherry-pick -ff <commits from branch1>
+```
+
+
 
 
