@@ -242,6 +242,10 @@ git checkout branch2
 git cherry-pick -ff <commits from branch1>
 ```
 
+* show a remote repo detail
+```
+git remote show origin
+```
 
 
 
