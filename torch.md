@@ -4,6 +4,10 @@
 conda create -n torch3 python=3.6 pip
 conda install pytorch torchvision -c pytorch
 ```
+### 1.1 command line cuda
+```
+CUDA_VISIBLE_DEVICES=5 python myapp.py
+```
 ## 2. PyTorch vs Numpy
 * Conceptually the same, BUT, PyTorch could use GPU acceleration.
 * Tenosr to numpy (**NOTE: share same memory**):
