@@ -1,4 +1,19 @@
 # Learning Python
+## argparse, [api](https://docs.python.org/3/library/argparse.html),[tutorial](https://docs.python.org/3/howto/argparse.html)
+* example
+```
+def run(args):
+  pass
+if __name__ == '__main__':
+  parser = argparse.ArgumentParser(description='Process some integers.')
+  # positional arguments
+  parser.add_argument('run')
+  # optional arguments
+  parser.add_argument('--pooling', type = str, default = 'lin', choices = ['max', 'ave', 'lin', 'exp', 'att'])
+  parser.add_argument('--dropout', type = float, default = 0.0)
+  args = parser.parse_args()
+  run(args)
+```
 ## [Decorator](https://www.python-course.eu/python3_decorators.php)
 * decorator is a callable object that takes `Class` or `function` as input, modifiy it, and return another `class` or `function`
 ```
