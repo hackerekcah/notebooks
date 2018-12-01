@@ -90,19 +90,21 @@ config without security
 # will generate ~/.jupyter/jupyter_notebook_config.py
 jupyter notebook --generate-config
 ```
-* 2.change alowed ip to 0.0.0.0
+* 2. config a password to avoid input tokens
+``` bash
+# will generate ~/.jupyter/jupyter_notebook_config.json, which save the password hash
+jupyter notebook password
 ```
+* 3.change alowed ip to 0.0.0.0 in `jupyter_notebook_config.py` config file
+```
+# edit jupyter_notebook_config.py file
 c.NotebookApp.ip = '0.0.0.0'
 ```
-* 3.run notebook/lab on server and open browser on windows
+* 4.run notebook/lab on server and open browser on windows
 ```
 # on linux
 jupyter notebook          # or `jupyter lab`
 # on windows browser
 192.168.11.214:8889       # for notebook
 192.168.11.214:8889/lab   # for lab
-```
-* 4.(options) config a password 
-```
-jupyter notebook password
 ```
