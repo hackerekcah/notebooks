@@ -82,3 +82,23 @@ audio_obj = ipd.Audio(filename='/path/to/audio')
 from IPython.display import display
 display(audio_obj)
 ```
+
+# 7. [Remote Server](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html)
+config without security
+* 1.generate notebook config file
+```
+# will generate ~/.jupyter/jupyter_notebook_config.py
+jupyter notebook --generate-config
+```
+* 2.change alowed ip to 0.0.0.0
+```
+c.NotebookApp.ip = '0.0.0.0'
+```
+* 3.run notebook/lab on server and open browser on windows
+```
+# on linux
+jupyter notebook          # or `jupyter lab`
+# on windows browser
+192.168.11.214:8889       # for notebook
+192.168.11.214:8889/lab   # for lab
+```
