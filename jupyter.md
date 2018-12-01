@@ -51,6 +51,10 @@ same as: obj? / obj??
 ```
 !COMMAND #run command
 !!COMMAND #run command and get output as a list
+
+#example
+audio_path = /sdfs/sdda
+!ls $audio_path
 ```
 * print variables
 ```
@@ -67,4 +71,14 @@ automatically reload changes of the python files
 ```
 %load_ext autoreload
 %autoreload 2 #autoreload all modules
+```
+
+# 6. Ipython display
+* display audio
+``` python
+import IPython.display as ipd
+audio_obj = ipd.Audio(filename='/path/to/audio')
+# need to call display() to show, if not returned to jupyter cell
+from IPython.display import display
+display(audio_obj)
 ```
