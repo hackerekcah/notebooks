@@ -102,3 +102,7 @@ jupyter notebook          # or `jupyter lab`
 192.168.11.214:8889       # for notebook
 192.168.11.214:8889/lab   # for lab
 ```
+* 4.(options) config a password 
+```
+jupyter notebook password
+```
