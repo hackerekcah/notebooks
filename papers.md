@@ -7,3 +7,6 @@
 
 ## Multi-Instance Learning via Embedded Instance Selection
 * [yixin,chen](https://john.cs.olemiss.edu/~ychen/index.html)
+
+## MIL
+* [Zhou Zhihua](http://lamda.nju.edu.cn/CH.MainPage.ashx)
