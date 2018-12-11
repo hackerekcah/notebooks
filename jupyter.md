@@ -21,7 +21,7 @@ jupyter kernelspec list
 - delete a kernel spec  
 delete the kernelspec directory
 
-# 4 [Migics in Ipython](https://ipython.readthedocs.io/en/stable/interactive/magics.html)
+# 4 [Magics in Ipython](https://ipython.readthedocs.io/en/stable/interactive/magics.html)
 Magic commands start with %
 ## 4.1 Line magics
 * set up env
