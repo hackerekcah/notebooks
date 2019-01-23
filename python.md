@@ -118,3 +118,13 @@ f(**p)
 saved_args = locals()
 print(saved_args)
 ```
+## configparser
+* read from file
+```python
+config = configparser.ConfigParser()
+config.read(os.path.join(ROOT_DIR, config_file))
+```
+* quick print config
+``` python
+print({section: dict(config[section]) for section in config.sections()})
+```
