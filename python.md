@@ -128,3 +128,23 @@ config.read(os.path.join(ROOT_DIR, config_file))
 ``` python
 print({section: dict(config[section]) for section in config.sections()})
 ```
+## logging
+* config logging
+```python
+# logging.basicConfig does nothing if a handler has been set up already:
+logging.basicConfig(filename=log_file, level='INFO', None))
+```
+* config logging file on the fly
+```python
+import logging
+
+fileh = logging.FileHandler('/tmp/logfile', 'a')
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+fileh.setFormatter(formatter)
+
+log = logging.getLogger()  # root logger
+for hdlr in log.handlers[:]:  # remove all old handlers
+    log.removeHandler(hdlr)
+log.addHandler(fileh)      # set the new handler
+```
+
