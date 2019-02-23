@@ -203,3 +203,13 @@ tensor([  8, 163, 175,  ...,   0,   0,   0], dtype=torch.uint8) torch.Size([8240
 >>> print(torch.cuda.get_rng_state(5), torch.cuda.get_rng_state(5).size())
 tensor([178, 199, 104,  ...,   0,   0,   0], dtype=torch.uint8) torch.Size([824016])
 ```
+### 13. reproducible results
+``` python
+def set_seed(seed):
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    np.random.seed(seed)
+    random.seed(seed)
+    # must set to True
+    torch.backends.cudnn.deterministic = True
+```
