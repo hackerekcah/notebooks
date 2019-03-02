@@ -20,4 +20,8 @@ sudo ssserver -c /etc/shadowsocks.json -d start
     "40003": "mike"
   }
 }
+
+# stallion
+https://manage.buyvm.net/login
+b234abee3b06457a
 ```
