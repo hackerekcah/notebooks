@@ -16,8 +16,8 @@ read as `la tech`
 * LaTex is preferred over pdf, because it contains most infomations, will use by the arxiv when necessary
 * submmit a zip contains  
   * `.tex` file, add `\pdfoutput=1` to the preamble of the tex file, to indicate this tex file should be processed by `pdflatex`
-  ** `.bbl` file, this is generated using the `.bib` file
-  ** `.bst` bibligraph style file
-  ** `.sty` style file of the conference
-  ** `figures/` subdirectory, containing the figures
+  * `.bbl` file, this is generated using the `.bib` file
+  * `.bst` bibligraph style file
+  * `.sty` style file of the conference
+  * `figures/` subdirectory, containing the figures
 * No other auxillary files should be included. such as `.aux`, `.log`.
