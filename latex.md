@@ -1,5 +1,5 @@
-# Latex
-read as `la tech`
+# Latex (`la tech`)
+
 ## install latex and editors on windows
 * install MikTex on windows
 * MikTex is a LaTeX distribution, including `tex, latex, pdftex, pdflatex`
@@ -21,3 +21,15 @@ read as `la tech`
   * `.sty` style file of the conference
   * `figures/` subdirectory, containing the figures
 * No other auxillary files should be included. such as `.aux`, `.log`.
+
+## bibtex, biber, biblatex, natbib
+* `bibtex` and `biber` are programs that process `.bib` files, also called `backend`
+* `natbib` and `biblatex` are LaTeX `packages` that format the bibligraphy
+* see examples [biblatex-examples](http://ctan.cs.uu.nl/macros/latex/contrib/biblatex/doc/examples/biblatex-examples.bib)
+* [bibtex entries](https://www.andy-roberts.net/res/writing/latex/bibentries.pdf)
+* [bibtex entries manual](http://bib-it.sourceforge.net/help/fieldsAndEntryTypes.php)
+* [arxiv2bibtex](https://arxiv2bibtex.org/?q=1904.05204+&format=bibtex)
+* [arxiv bibtex stackexchange](https://tex.stackexchange.com/questions/49757/what-should-an-entry-for-arxiv-entries-look-like-for-biblatex)
+  * eprinttype={arxiv}
+  * eprintclass={cs.SD}
+  * eprint={xxxx.xxxx}
