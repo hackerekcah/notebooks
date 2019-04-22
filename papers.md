@@ -10,3 +10,6 @@
 
 ## MIL
 * [Zhou Zhihua](http://lamda.nju.edu.cn/CH.MainPage.ashx)
+
+## Paper writing
+* [blog](http://www.ref-n-write.com/trial/research-paper-example-writing-abstract-section-academic-phrasebank-vocabulary/)
