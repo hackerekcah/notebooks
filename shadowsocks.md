@@ -1,7 +1,7 @@
 # Server
 ``` bash
 # in etc/rc.local
-sudo ssserver -c /etc/shadowsocks.json -d start
+ssserver -c /etc/shadowsocks.json -d start
 
 # new config file: /etc/shadowsocks.json
 {
@@ -24,4 +24,14 @@ sudo ssserver -c /etc/shadowsocks.json -d start
 # stallion
 https://manage.buyvm.net/login
 b234abee3b06457a
+
+# ssh server
+ssh root@198.98.52.190
+# passwd
+604
+
+# check ssserver running
+ps aux |grep ssserver
+# if not,run it
+ssserver -c /etc/shadowsocks.json -d start
 ```
