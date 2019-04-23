@@ -34,4 +34,8 @@ ssh root@198.98.52.190
 ps aux |grep ssserver
 # if not,run it
 ssserver -c /etc/shadowsocks.json -d start
+
+# if any problem
+https://buyvm.net/ -> client area
+
 ```
