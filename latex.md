@@ -33,3 +33,35 @@
   * eprinttype={arxiv}
   * eprintclass={cs.SD}
   * eprint={xxxx.xxxx}
+  
+## Beamer
+* [Beamer wiki](https://en.wikibooks.org/wiki/LaTeX/Presentations)
+```
+\documentclass{beamer}
+
+% preamble: set title page
+\author[SONG]{Song Hongwei}
+\title{Paper Notes}
+\institute{Harbin Institute of Techonology}
+\date{\today}
+
+% inside document env
+% add title page
+\frame{\titlepage}
+
+% Table of content
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents[currentsection]
+\end{frame}
+
+% section, subsection before or between frames
+\section
+
+% References
+\begin{frame}[t,allowframebreaks]
+\frametitle{References}
+	\bibliographystyle{plainnat}
+	\bibliography{mybib}
+\end{frame}
+```
