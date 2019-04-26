@@ -36,6 +36,7 @@
   
 ## Beamer
 * [Beamer wiki](https://en.wikibooks.org/wiki/LaTeX/Presentations)
+* example
 ```
 \documentclass{beamer}
 
@@ -64,4 +65,16 @@
 	\bibliographystyle{plainnat}
 	\bibliography{mybib}
 \end{frame}
+```
+* figures
+```
+\begin{center}
+	\includegraphics[height=0.8\textheight]{figures/myfig}
+\end{center}
+```
+* block
+```
+\begin{alertblock}{Comment}
+attention is effective for domain mismatch.
+\end{alertblock}
 ```
