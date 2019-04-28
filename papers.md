@@ -13,3 +13,7 @@
 
 ## Paper writing
 * [blog](http://www.ref-n-write.com/trial/research-paper-example-writing-abstract-section-academic-phrasebank-vocabulary/)
+
+## NYU Music and Audio Research Lab
+* [marl](https://github.com/marl)
+* [urban sound](https://urbansounddataset.weebly.com/)
