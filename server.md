@@ -4,3 +4,8 @@
 * register and download .tar.gz file
 * command line `sudo ./install.sh` or GUI `sudo ./install_GUI.sh`
 * using sudo, will install systemwise at `/opt/intel/`
+
+## check reboot
+```bash
+last | grep reboot
+```
