@@ -78,3 +78,9 @@
 attention is effective for domain mismatch.
 \end{alertblock}
 ```
+
+* beamer enable bibliography numbering
+```
+# in preamble part, add this line
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+```
