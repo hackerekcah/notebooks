@@ -20,4 +20,6 @@
 * [urban sed](http://urbansed.weebly.com/)
 
 ## [Mark Plumbley](https://www.surrey.ac.uk/people/mark-plumbley)
-* IEEE Fellow, Chair of DCASE2018 Workshop, University of Surrey
+* IEEE Fellow, Chair of DCASE2018 Workshop, 
+* Center for Vision, Speech and Signal Processing, University of Surrey
+
