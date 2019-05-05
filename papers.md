@@ -18,3 +18,6 @@
 * [marl](https://github.com/marl)
 * [urban sound](https://urbansounddataset.weebly.com/)
 * [urban sed](http://urbansed.weebly.com/)
+
+## [Mark Plumbley](https://www.surrey.ac.uk/people/mark-plumbley)
+* IEEE Fellow, Chair of DCASE2018 Workshop, University of Surrey
