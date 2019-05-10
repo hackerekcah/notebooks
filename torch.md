@@ -105,6 +105,7 @@ v = torch.randperm(4)           # Size 4. Random permutation of integers from 0 
 ```
 ### 8.5 load partial model / partial parameters, set *strict=False*
 ```
+# allow state 'key' mismatch between saved model and target model
 modelB.load_state_dict(torch.load(PATH), strict=False)
 ```
 ### 8.6 save&load cross device, see [torch.load](https://pytorch.org/docs/stable/torch.html#torch.load)
