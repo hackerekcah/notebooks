@@ -134,17 +134,20 @@ print({section: dict(config[section]) for section in config.sections()})
 # logging.basicConfig does nothing if a handler has been set up already:
 logging.basicConfig(filename=log_file, level='INFO', None))
 ```
-* config logging file on the fly
+* config logging file on the fly (Both the handler level and logger level must be set)
 ```python
 import logging
 
 fileh = logging.FileHandler('/tmp/logfile', 'a')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 fileh.setFormatter(formatter)
+fileh.setLevel('INFO')
 
-log = logging.getLogger()  # root logger
-for hdlr in log.handlers[:]:  # remove all old handlers
-    log.removeHandler(hdlr)
-log.addHandler(fileh)      # set the new handler
+logger = logging.getLogger()  # root logger
+logger.setLevel('INFO')
+
+for hdlr in logger.handlers[:]:  # remove all old handlers
+    logger.removeHandler(hdlr)
+logger.addHandler(fileh)      # set the new handler
 ```
 
