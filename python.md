@@ -134,7 +134,7 @@ print({section: dict(config[section]) for section in config.sections()})
 # logging.basicConfig does nothing if a handler has been set up already:
 logging.basicConfig(filename=log_file, level='INFO', None))
 ```
-* config logging file on the fly \\
+* config logging file on the fly
     * Both the handler level and logger level must be set
     * see [logging flow](https://docs.python.org/2/howto/logging.html#logging-flow)
 ```python
