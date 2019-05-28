@@ -127,10 +127,11 @@ jupyter notebook --port=9991 --notebook-dir=/data/songhongwei/
 ## 10. Configuration
 ```
 # command line options
-jupyter notebook --port=9991
+jupyter notebook --notebook-dir=/data/songhongwei/
 
 # change ~/jupyter/jupyter_notebook_config.py
-c.NotebookApp.port=9991
+# note the *under-slash* differ from command line *inter-slash*
+c.NotebookApp.notebook_dir=/data/songhongwei/
 
 # see a list of options
 jupyter notebook --help
