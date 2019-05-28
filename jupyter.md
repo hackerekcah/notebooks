@@ -108,3 +108,30 @@ jupyter notebook          # or `jupyter lab`
 192.168.11.214:8889       # for notebook
 192.168.11.214:8889/lab   # for lab
 ```
+
+# 8. Jupyter lab vs Jupyter notebook
+* jupyter lab is a server extention over jupyter notebook
+```
+# URL for jupyter notebook
+http(s)://<server:port>/<lab-location>/tree
+# URL for jupyter lab
+http(s)://<server:port>/<lab-location>/lab
+```
+
+# 9. Config Port and Server Directory
+```
+# start, specify serve port and dir
+jupyter notebook --port=9991 --notebook-dir=/data/songhongwei/
+```
+
+## 10. Configuration
+```
+# command line options
+jupyter notebook --port=9991
+
+# change ~/jupyter/jupyter_notebook_config.py
+c.NotebookApp.port=9991
+
+# see a list of options
+jupyter notebook --help
+```
