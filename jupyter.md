@@ -129,12 +129,18 @@ jupyter notebook --port=9991 --notebook-dir=/data/songhongwei/
 # command line options
 jupyter notebook --notebook-dir=/data/songhongwei/
 
+# command line
+jupyter notebook --NotebookApp.base_url=/asc
+
 # change ~/jupyter/jupyter_notebook_config.py
 # note the *under-slash* differ from command line *inter-slash*
 c.NotebookApp.notebook_dir=/data/songhongwei/
 
 # see a list of options
 jupyter notebook --help
+
+# see a full list of options
+jupyter notebook --help-all
 ```
 
 ## 11. List or stop running servers
