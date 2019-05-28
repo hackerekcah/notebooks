@@ -136,3 +136,8 @@ c.NotebookApp.notebook_dir=/data/songhongwei/
 # see a list of options
 jupyter notebook --help
 ```
+
+## 11. List or stop running servers
+```
+jupyter notebook list/stop
+```
