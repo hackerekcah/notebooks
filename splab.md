@@ -1,6 +1,8 @@
 # SPLAB Code Demonstration
-* Each app has a seperate lab workspace
+* Each app serves at a unique `LAN_IP:PORT`
+* Each app has a jupyterlab workspace under `/data/splab_demo/`
 ```
-192.168.11.214:9991 /data/splab_demo/acoustic_scene_classification
-192.168.11.214:9992 /data/splab_demo/speech_enhancement
+# LAN_IP: PORT -> workspace
+192.168.11.214:9991/lab -> /data/splab_demo/acoustic_scene_classification
+192.168.11.214:9992/lab -> /data/splab_demo/speech_enhancement
 ```
