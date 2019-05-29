@@ -7,7 +7,7 @@
 192.168.11.214:7771/lab :: /data/splab_demo/acoustic_scene_classification
 192.168.11.214:7772/lab :: /data/splab_demo/speech_enhancement
 ```
-* Audio will be recorded and upload to 
+* Audio will be uploaded to the following directory (using `jupyter lab`) 
 ```
 /data/splab_demo/acoustic_scene_classification/audio
 ```
