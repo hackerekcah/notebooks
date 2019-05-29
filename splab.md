@@ -8,7 +8,7 @@
 ## Design Architectures
 ### Overall
 * Client-Server Architec using `Jupyter notebook`
-* Utilizing `Jupyter notebook` to allow application side  
+   * `Jupyter notebook` allow powerfull application side design 
 ### IP, Port, Directories
 * Each app serves at a unique `LAN_IP:PORT`
 * Each app has a jupyterlab dir under `/data/splab_demo/`
