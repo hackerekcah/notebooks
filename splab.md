@@ -1,4 +1,5 @@
 # SPLAB Code Demonstration
+## IP, PORT, Application Setups
 * Each app serves at a unique `LAN_IP:PORT`
 * Each app has a jupyterlab dir under `/data/splab_demo/`
 ```
@@ -7,10 +8,40 @@
 192.168.11.214:7772/lab :: /data/splab_demo/speech_enhancement
 ```
 
-## start the jupyter notebook/lab server
+## Server side
+### 1. Install and setup jupyter ipython kernel for your python environment
+``` bash
+# activate environment
+source activate myenv
+
+# install jupyter
+pip install jupyter
+
+# install ipykernel module
+pip install ipykernel
+
+# create Ipython kernel for myenv
+python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 ```
-# --no-browser: dont automatically open webbrowser
-# &: run backend so that terminal can be closed
+### 2. Config jupyter to allow remote acess with password
+* 2.1 generate notebook config file
+``` bash
+# will generate ~/.jupyter/jupyter_notebook_config.py
+jupyter notebook --generate-config
+```
+* 2.2 config password for jupyter notebook
+```
+# will generate ~/.jupyter/jupyter_notebook_config.json, which save the password hash
+jupyter notebook password
+```
+
+### 3. Start the jupyter notebook/lab server
+
+* `ip=0.0.0.0` to allow acess from any remote ip 
+* `port=7771` *SHOULD* match your demo application!!
+* `--no-browser`: dont automatically open webbrowser
+* `&`: run backend so that terminal can be closed
+``` bash
 jupyter notebook --ip=0.0.0.0 --port=7771 --no-browser --notebook-dir=/data/splab_demo/acoustic_scene_classification &
 ```
 
