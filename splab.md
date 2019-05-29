@@ -4,6 +4,8 @@
     * e.g. speech recognition, speaker verification, event classification, emotion recognition
 * Requirements
     * all phd students
+    * time response is not critical
+    * easy to demo, better provide one click demo
 
 ## Design Architectures
 ### Overall
