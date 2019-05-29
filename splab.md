@@ -4,7 +4,7 @@
     * e.g. speech recognition, speaker verification, event classification, emotion recognition
 * All PHD students
 
-## IP, PORT, Application Setups
+## Design Architectures
 * Each app serves at a unique `LAN_IP:PORT`
 * Each app has a jupyterlab dir under `/data/splab_demo/`
 ```
