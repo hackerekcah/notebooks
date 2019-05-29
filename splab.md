@@ -76,4 +76,11 @@ jupyter notebook --ip=0.0.0.0 --port=7771 --no-browser --notebook-dir=/data/spla
 # ! : means call a bash command
 !/home/songhongwei/anaconda2/envs/asc_mt/bin/python main.py audio/tram-vienna-285-8639-a.wav
 ```
-
+# Q&A
+Q: what if matlab applications?
+A: Two options, option 1 (prefered)
+```
+# ! : means call a bash command
+!/path/to/matlab main.m audio/tram-vienna-285-8639-a.wav
+```
+option 2: install notebook kernels for matlab. (Above we used `Ipython kernel`)
