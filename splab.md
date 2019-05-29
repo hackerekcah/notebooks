@@ -8,6 +8,7 @@
 ## Design Architectures
 ### Overall
 * Client-Server Architec using `Jupyter notebook`
+   * Each app as a service on the server side
    * `Jupyter notebook` allow powerfull application side design 
 ### IP, Port, Directories
 * Each app serves at a unique `LAN_IP:PORT`
