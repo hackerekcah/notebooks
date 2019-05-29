@@ -1,4 +1,9 @@
 # SPLAB Code Demonstration
+## Motivation:
+* Demo our applications (for LAN)
+    * e.g. speech recognition, speaker verification, event classification, emotion recognition
+* All PHD students
+
 ## IP, PORT, Application Setups
 * Each app serves at a unique `LAN_IP:PORT`
 * Each app has a jupyterlab dir under `/data/splab_demo/`
