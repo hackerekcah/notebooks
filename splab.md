@@ -38,7 +38,7 @@ jupyter notebook password
 ### 3. Start the jupyter notebook/lab server
 
 * `ip=0.0.0.0` to allow acess from any remote ip 
-* `port=7771` *SHOULD* match your demo application!!
+* `--port` and `--notebook-dir` *SHOULD* match your demo application!!
 * `--no-browser`: dont automatically open webbrowser
 * `&`: run backend so that terminal can be closed
 ``` bash
