@@ -7,6 +7,11 @@
 192.168.11.214:7771/lab :: /data/splab_demo/acoustic_scene_classification
 192.168.11.214:7772/lab :: /data/splab_demo/speech_enhancement
 ```
+* Audio will be recorded and upload to 
+```
+/data/splab_demo/acoustic_scene_classification/audio
+```
+* Create your `.ipynb` file and run your program iside
 
 ## Server side
 ### 1. Install and setup jupyter ipython kernel for your python environment
@@ -36,6 +41,7 @@ jupyter notebook password
 ```
 
 ### 3. Create your demo app directory inside `/data/splab_demo/`
+* also you can put your excutable inside your application directory
 ``` bash
 mkdir /data/splab_demo/acoustic_scene_classification/
 ```
@@ -48,5 +54,15 @@ mkdir /data/splab_demo/acoustic_scene_classification/
 * `&`: run backend so that terminal can be closed
 ``` bash
 jupyter notebook --ip=0.0.0.0 --port=7771 --no-browser --notebook-dir=/data/splab_demo/acoustic_scene_classification &
+```
+
+# Client side
+* open web browser and visit `http://ip:port/lab`
+* input password
+* create your jupyter notebook inside the directory, e.g. `main.ipynb`
+* call your program inside a `code cell`
+```
+# ! : means call a bash command
+!/home/songhongwei/anaconda2/envs/asc_mt/bin/python main.py audio/tram-vienna-285-8639-a.wav
 ```
 
