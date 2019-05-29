@@ -39,7 +39,8 @@ python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 # will generate ~/.jupyter/jupyter_notebook_config.py
 jupyter notebook --generate-config
 ```
-* 2.2 config password for jupyter notebook (SECURITY ISSUE: leak of password will allow anyone to acess your data and program)
+* 2.2 config password for jupyter notebook
+      * SECURITY WARNING: leak of password will allow anyone to acess your data and program
 ```
 # will generate ~/.jupyter/jupyter_notebook_config.json, which save the password hash
 jupyter notebook password
