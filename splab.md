@@ -16,7 +16,7 @@
 ```
 /data/splab_demo/acoustic_scene_classification/audio
 ```
-* Create your `.ipynb` file and run your program iside
+* Create your `.ipynb` file and run your program iside your juypter notebook
 
 ## Server side
 ### 1. Install and setup jupyter ipython kernel for your python environment
