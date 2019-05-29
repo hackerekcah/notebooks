@@ -71,7 +71,7 @@ jupyter notebook --ip=0.0.0.0 --port=7771 --no-browser --notebook-dir=/data/spla
 ```
 
 # Client side
-* open web browser and visit `http://ip:port/lab`
+* open web browser and visit `http://<ip>:<port>/lab`
 * input password
 * create your jupyter notebook inside the directory, e.g. `main.ipynb`
 * call your program inside a `code cell`
