@@ -29,13 +29,18 @@ python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 # will generate ~/.jupyter/jupyter_notebook_config.py
 jupyter notebook --generate-config
 ```
-* 2.2 config password for jupyter notebook
+* 2.2 config password for jupyter notebook (SECURITY ISSUE: leak of password will allow anyone to acess your data and program)
 ```
 # will generate ~/.jupyter/jupyter_notebook_config.json, which save the password hash
 jupyter notebook password
 ```
 
-### 3. Start the jupyter notebook/lab server
+### 3. Create your demo app directory inside `/data/splab_demo/`
+``` bash
+mkdir /data/splab_demo/acoustic_scene_classification/
+```
+
+### 4. Start the jupyter notebook/lab server
 
 * `ip=0.0.0.0` to allow acess from any remote ip 
 * `--port` and `--notebook-dir` *SHOULD* match your demo application!!
