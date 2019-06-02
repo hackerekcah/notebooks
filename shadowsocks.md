@@ -34,6 +34,8 @@ ssh root@198.98.52.190
 ps aux |grep ssserver
 # if not,run it
 ssserver -c /etc/shadowsocks.json -d start
+# start ssserver with a watcher program
+nohup check_ssserver.sh >/dev/null 2>&1
 
 # if any problem
 https://buyvm.net/ -> client area
