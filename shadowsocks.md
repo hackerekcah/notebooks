@@ -1,3 +1,20 @@
+# Local
+```
+sslocal -c /etc/shadowsocks.json -d start
+
+# /etc/shadowsocks.json
+{
+"server":"198.98.52.190",
+"server_port":40004,
+"local_address": "192.168.11.211",
+"local_port":7070,
+"password":"password4",
+"timeout":600,
+"method":"aes-256-cfb"
+}
+
+```
+
 # Server
 ``` bash
 # in etc/rc.local
