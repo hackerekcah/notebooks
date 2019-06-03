@@ -11,4 +11,6 @@ last | grep reboot
 ```
 
 ## change owner, both user and group
+``` bash
 sudo chown -R songhongwei:songhongwei /data/songhongwei
+```
