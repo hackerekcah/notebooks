@@ -9,3 +9,6 @@
 ```bash
 last | grep reboot
 ```
+
+## change owner, both user and group
+sudo chown -R songhongwei:songhongwei /data/songhongwei
