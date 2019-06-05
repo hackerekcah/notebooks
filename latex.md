@@ -85,7 +85,7 @@ attention is effective for domain mismatch.
 \setbeamertemplate{bibliography item}{\insertbiblabel}
 ```
 ## notes
-* Not tilt in math
+* Not  in math
 ```
 {\rm sigmoid}(x)
 ```
