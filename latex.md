@@ -84,3 +84,8 @@ attention is effective for domain mismatch.
 # in preamble part, add this line
 \setbeamertemplate{bibliography item}{\insertbiblabel}
 ```
+## notes
+* Not tilt in math
+```
+{\rm sigmoid}(x)
+```
