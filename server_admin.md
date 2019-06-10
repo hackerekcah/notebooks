@@ -14,3 +14,12 @@ last | grep reboot
 ``` bash
 sudo chown -R songhongwei:songhongwei /data/songhongwei
 ```
+
+## Disk usage
+```bash
+# check current path disk usage
+sudo du --max-depth=1 -h
+
+#check disk usage
+df -hl
+```
