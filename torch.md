@@ -214,3 +214,7 @@ def set_seed(seed):
     # must set to True
     torch.backends.cudnn.deterministic = True
 ```
+
+### 14. `model.eval()` vs with `torch.no_grad():`
+* `model.eval()` make `BatchNorm` and `Dropout` layer works in evaluation mode
+* `torch.no_grad()` ignore gradient calculation, faster and less memory usage during evaluation
