@@ -17,9 +17,13 @@ sudo chown -R songhongwei:songhongwei /data/songhongwei
 
 ## Disk usage
 ```bash
-# check current path disk usage
-sudo du --max-depth=1 -h
 
-#check disk usage
+#check general disk usage
 df -hl
+
+# check current path disk usage, list all children of `/data/`
+sudo du --max-depth=1 -h /data/
+
+# check disk usage of a folder
+sudo du -sh /data/songhongwei/
 ```
