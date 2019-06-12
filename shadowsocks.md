@@ -61,7 +61,7 @@ https://buyvm.net/ -> client area
 
 * not safe way
 ```
-# on server
+# on server, any 443 port pack send to self, 443 is the https port
 ssh -D 0.0.0.0:443 root@127.0.0.1
 
 # on local
