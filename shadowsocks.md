@@ -63,4 +63,7 @@ https://buyvm.net/ -> client area
 ```
 # on server
 ssh -D 0.0.0.0:443 root@127.0.0.1
+
+# on local
+set proxy, socks5, port 443
 ```
