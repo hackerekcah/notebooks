@@ -58,3 +58,9 @@ nohup check_ssserver.sh >/dev/null 2>&1
 https://buyvm.net/ -> client area
 
 ```
+
+* not safe way
+```
+# on server
+ssh -D 0.0.0.0:443 root@127.0.0.1
+```
