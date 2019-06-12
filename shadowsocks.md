@@ -43,7 +43,7 @@ https://manage.buyvm.net/login
 b234abee3b06457a
 
 # ssh server
-ssh root@198.98.52.190
+ssh root@198.98.53.128
 # passwd
 604
 
