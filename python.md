@@ -176,5 +176,9 @@ logging.info(vars(args))
 # Best: pretty print
 import pprint
 logging.info(pprint.pformat(vars(args)))
+
+# if args is a dict or object
+import pprint
+logging.info(pprint.pformat(vars(args)) if not isinstance(args, dict) else pprint.pformat(args))
 ```
 
