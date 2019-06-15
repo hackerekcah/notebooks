@@ -161,7 +161,7 @@ args = parser.parse_args()
 # convert Namespace to string
 logging.info(str(args))
 
-# convert Namespace to dict
+# convert Namespace to dict, vars(obj) return obj's attribute and its value as a dict object
 logging.info(vars(args))
 
 # Best: pretty print
