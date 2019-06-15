@@ -153,3 +153,19 @@ for hdlr in logger.handlers[:]:  # remove all old handlers
 logger.addHandler(fileh)      # set the new handler
 ```
 
+## logging argparse arguments
+``` python
+# return a argparse.Namespace object, which is an object that can get attribute through dot operation (e.g., b.a)
+args = parser.parse_args()
+
+# convert Namespace to string
+logging.info(str(args))
+
+# convert Namespace to dict
+logging.info(vars(args))
+
+# Best: pretty print
+import pprint
+logging.info(pprint.pformat(vars(args)))
+```
+
