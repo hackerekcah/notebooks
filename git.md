@@ -247,5 +247,15 @@ git cherry-pick -ff <commits from branch1>
 git remote show origin
 ```
 
+# show diff in last commit
+```
+git show <COMMIT hash>
+```
+
+# amend/edit last commit message(only if not pushed to remote)
+```
+# will open text editor, can edit message
+git commit --amend
+```
 
 
