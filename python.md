@@ -140,17 +140,26 @@ logging.basicConfig(filename=log_file, level='INFO', None))
 ```python
 import logging
 
-fileh = logging.FileHandler('/tmp/logfile', 'a')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+# logging to file
+fileh = logging.FileHandler('/tmp/logfile', 'a')
 fileh.setFormatter(formatter)
 fileh.setLevel('INFO')
+
+# loggint to stdout
+streamh = logging.StreamHandler(sys.stdout)
+streamh.setLevel('INFO')
+streamh.setFormatter(formatter)
 
 logger = logging.getLogger()  # root logger
 logger.setLevel('INFO')
 
 for hdlr in logger.handlers[:]:  # remove all old handlers
     logger.removeHandler(hdlr)
-logger.addHandler(fileh)      # set the new handler
+
+logger.addHandler(fileh)
+logger.addHander(streamh)
 ```
 
 ## logging argparse arguments
