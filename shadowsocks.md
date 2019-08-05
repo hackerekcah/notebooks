@@ -67,3 +67,12 @@ ssh -D 0.0.0.0:443 root@127.0.0.1
 # on local
 set proxy, socks5, port 443
 ```
+
+# for iphone
+* install `outline manager` on windows, run code from the last setup on remote server.
+    * to get the share-able link
+* install `outline` client for iphone from the ios app store
+* share this link
+```
+https://s3.amazonaws.com/outline-vpn/invite.html?admin_embed#/zh-CN/invite/ss%3A%2F%2FY2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpuTUN2dVp6VEptVUE%3D%40198.98.53.128%3A48900%2F%3Foutline%3D1
+```
