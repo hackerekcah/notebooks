@@ -46,3 +46,12 @@ sudo shellinaboxd --no-beep --disable-ssl --disable-ssl-menu --port=60004 -s /:S
 sudo /home/duzhihao/frp_0.25.3_linux_amd64/frpc -c /home/duzhihao/frp_0.25.3_linux_amd64/frpc.ini &
 ```
 
+## du's frp run on xshell
+``` bash
+# new a screen
+screen -S du
+
+# run on new screen
+sudo /home/duzhihao/frp_0.25.3_linux_amd64/frpc -c /home/duzhihao/frp_0.25.3_linux_amd64/frpc.ini &
+```
+
