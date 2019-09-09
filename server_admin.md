@@ -30,10 +30,14 @@ sudo du -sh /data/songhongwei/
 
 ## ssh from outside university
 ``` bash
-# add in rc.local
+# add in rc.local on server
 sudo shellinaboxd --no-beep --disable-ssl --disable-ssl-menu --port=60004 -s /:SSH:192.168.11.214 &
 
 # add a port forwarding in router
+
+# user side
+1. login to vpn.hit.edu.cn
+2. http://202.118.228.98:6000X, where X from 1-5
 ```
 
 ## du's frp
@@ -42,8 +46,3 @@ sudo shellinaboxd --no-beep --disable-ssl --disable-ssl-menu --port=60004 -s /:S
 sudo /home/duzhihao/frp_0.25.3_linux_amd64/frpc -c /home/duzhihao/frp_0.25.3_linux_amd64/frpc.ini &
 ```
 
-## ssh from outside university
-```
-1. login to vpn.hit.edu.cn
-2. http://202.118.228.98:6000X, where X from 1-5
-```
