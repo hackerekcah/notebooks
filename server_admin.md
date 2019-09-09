@@ -27,3 +27,17 @@ sudo du --max-depth=1 -h /data/
 # check disk usage of a folder
 sudo du -sh /data/songhongwei/
 ```
+
+## ssh from outside university
+``` bash
+# add in rc.local
+sudo shellinaboxd --no-beep --disable-ssl --disable-ssl-menu --port=60004 -s /:SSH:192.168.11.214 &
+
+# add a port forwarding in router
+```
+
+## du's frp
+``` bash
+# add in rc.local
+sudo /home/duzhihao/frp_0.25.3_linux_amd64/frpc -c /home/duzhihao/frp_0.25.3_linux_amd64/frpc.ini &
+```
