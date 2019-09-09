@@ -41,3 +41,9 @@ sudo shellinaboxd --no-beep --disable-ssl --disable-ssl-menu --port=60004 -s /:S
 # add in rc.local
 sudo /home/duzhihao/frp_0.25.3_linux_amd64/frpc -c /home/duzhihao/frp_0.25.3_linux_amd64/frpc.ini &
 ```
+
+## ssh from outside university
+```
+1. login to vpn.hit.edu.cn
+2. http://202.118.228.98:6000X, where X from 1-5
+```
