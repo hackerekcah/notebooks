@@ -4,7 +4,7 @@ sslocal -c /etc/shadowsocks.json -d start
 
 # /etc/shadowsocks.json
 {
-"server":"198.98.52.190",
+"server":"198.98.62.68",
 "server_port":40004,
 "local_address": "192.168.11.211",
 "local_port":7070,
