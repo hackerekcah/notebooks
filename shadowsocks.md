@@ -43,7 +43,7 @@ https://manage.buyvm.net/login
 b234abee3b06457a
 
 # ssh server
-ssh root@198.98.53.128
+ssh root@198.98.62.68
 # passwd
 604
 
@@ -74,5 +74,5 @@ set proxy, socks5, port 443
 * install `outline` client for iphone from the ios app store
 * share this link
 ```
-https://s3.amazonaws.com/outline-vpn/invite.html?admin_embed#/zh-CN/invite/ss%3A%2F%2FY2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpuTUN2dVp6VEptVUE%3D%40198.98.53.128%3A48900%2F%3Foutline%3D1
+https://s3.amazonaws.com/outline-vpn/invite.html?admin_embed#/zh-CN/invite/ss%3A%2F%2FY2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpuTUN2dVp6VEptVUE%3D%40198.98.62.68%3A48900%2F%3Foutline%3D1
 ```
