@@ -23,3 +23,5 @@
 * IEEE Fellow, Chair of DCASE2018 Workshop, 
 * Center for Vision, Speech and Signal Processing, University of Surrey
 
+# [Computational Analysis of Sound Scenes and Events](https://cassebook.github.io/)
+Computational Analysis of Sound Scenes and Events
