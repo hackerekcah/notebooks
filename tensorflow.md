@@ -1,4 +1,7 @@
 # Tensorflow
+
+## [Multiple Versions of CUDA](https://blog.kovalevskyi.com/multiple-version-of-cuda-libraries-on-the-same-machine-b9502d50ae77)
+
 ## [install](https://www.tensorflow.org/install/pip#3.-%E5%AE%89%E8%A3%85-tensorflow-pip-%E8%BD%AF%E4%BB%B6%E5%8C%85)
 * CUDA9.0 compatible with tensorlfow <1.13
 * install tensorflow-gpu 1.12, only compatible with python < 3.6
