@@ -11,6 +11,7 @@
 
 ### arXiv identifier
 * cite specific version is best practice!
+* click on the doi of the paper will redirect to publisher archive
 ```
 arXiv:0706.0001v1 [q-bio.CB] 1 Jun 2007
 which indicates v1 of the article arXiv:0706.0001 which has primary classification q-bio.CB, and was submitted on 1 June 2007.
