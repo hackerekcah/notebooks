@@ -30,7 +30,7 @@ sudo du -sh /data/songhongwei/
 
 ## ssh from outside university
 ``` bash
-# add in rc.local on server
+# add in /etc/rc.local file on server
 sudo shellinaboxd --no-beep --disable-ssl --disable-ssl-menu --port=60004 -s /:SSH:192.168.11.214 &
 
 # add a port forwarding in router
