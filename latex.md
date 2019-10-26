@@ -72,6 +72,18 @@
 	\includegraphics[height=0.8\textheight]{figures/myfig}
 \end{center}
 ```
+* text figure side-by-side
+```
+\begin{columns}
+	\begin{column}{0.4\textwidth}
+		# text here
+	\end{column}
+	\begin{column}{0.6\textwidth}
+		# image here
+	\end{column}
+\end{columns}
+```
+
 * block
 ```
 \begin{alertblock}{Comment}
