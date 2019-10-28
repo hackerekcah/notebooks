@@ -1,5 +1,5 @@
 # Multi-thread downloading
-
+* example of downloading `openl3` trained models
 ```
 # wget_thread.py
 
