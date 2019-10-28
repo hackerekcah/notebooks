@@ -258,4 +258,8 @@ git show <COMMIT hash>
 git commit --amend
 ```
 
+* difference between `git clone` and download zip
+```
+`clone` also get .git file, so you have the full repository. while downloaded zip wouln't
+```
 
