@@ -38,6 +38,15 @@ ssserver -c /etc/shadowsocks.json -d start
   }
 }
 
+# add in /etc/hosts on shadowsocks server, to prevent google robot detection, as in https://www.skyfly.xyz/2017/08/02/Casual/SolutionForGoogleRecaptcha/
+
+2607:f8b0:4005:801::200e google.com
+2607:f8b0:4005:801::200e www.google.com
+2404:6800:4005:807::2003 google.com.hk
+2404:6800:4005:807::2003 www.google.com.hk
+2404:6800:4005:807::2003 google.com.tw
+2404:6800:4005:807::2003 www.google.com.tw
+
 # stallion
 https://manage.buyvm.net/login
 b234abee3b06457a
