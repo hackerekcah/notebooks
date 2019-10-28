@@ -1,6 +1,6 @@
 
 ## pypi 清华mirror
-``` bash
+``` python
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 ```
 
