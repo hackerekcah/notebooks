@@ -12,3 +12,6 @@ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorfl
 ```
 
 ## GPU driver need to be updated to use CUDA 10
+
+## Tensorflow and Keras
+Keras 2.2.5 is the last version with tensorflow 1
