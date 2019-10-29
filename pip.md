@@ -34,23 +34,11 @@ pip install --upgrade werkzeug==0.12.2
 ```
 
 ## conda vs pip
-```
-Comparison of conda and pip
-conda	pip
-manages 
 
-binaries	wheel or source
-can require compilers	no	yes
-package types	any	Python-only
-create environment	yes, built-in	no, requires virtualenv or venv
-dependency checks	
-yes
+| Tables        | conda         | pip  |
+| ------------- |:-------------:| -----:|
+| manages      | binaries | wheels or source |
+| package      | any      |   python only |
+| dependency checks | yes      |    no |
+| package source | Anacodna repo and cloud | PyPI|
 
-no
-
-package sources
-
-Anaconda repo and cloud
-
-PyPI
-```
