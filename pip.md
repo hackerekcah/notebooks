@@ -21,3 +21,9 @@ socks5  192.168.11.211 7070
 ```
 proxychains pip install some-package
 ```
+
+## pip install specific pakcage
+```
+# --upgrade works with upgrade and downgrade
+pip install --upgrade werkzeug==0.12.2
+```
