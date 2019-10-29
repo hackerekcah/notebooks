@@ -147,3 +147,11 @@ jupyter notebook --help-all
 ```
 jupyter notebook list/stop
 ```
+
+## 12. install jupyterlab
+```
+conda install -c conda-forge jupyterlab
+
+# invoke jupyterlab
+jupyter lab
+```
