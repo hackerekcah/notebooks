@@ -29,7 +29,7 @@ if __name__ == '__main__':
     input_reprs = ['linear', 'mel128', 'mel256']
     content_type = ['music', 'env']
     model_version_str = 'v0_2_0'
-    weight_files = ['openl3_{}_{}_{}.h5.gz'.format(*tup)
+    weight_files = ['openl3_{}_{}_{}-v0_2_0.h5.gz'.format(*tup)
         for tup in product(modalities, input_reprs, content_type)]
     base_url = 'https://github.com/marl/openl3/raw/models/'
     dest_path = '/data/songhongwei/Desktop/L3_2/'
