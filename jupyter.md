@@ -155,3 +155,7 @@ conda install -c conda-forge jupyterlab
 # invoke jupyterlab
 jupyter lab
 ```
+## 13. shortcut switch tabs in jupyter
+```
+shitf + ctral + [ / ]
+```
