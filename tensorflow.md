@@ -9,7 +9,5 @@
 pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whl
 ```
 
-## GPU driver need to be updated to use CUDA 10
-
 ## Tensorflow and Keras
 Keras 2.2.5 is the last version with tensorflow 1
