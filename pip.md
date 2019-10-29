@@ -1,7 +1,12 @@
 
 ## pypi 清华mirror
 ``` python
+# tstinghua pypi index mirror
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+
+# set as default index
+pip install pip -U
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 ## pip using proxy
