@@ -7,6 +7,9 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 # set as default index
 pip install pip -U
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+# timeout, seconds
+pip install some-package --timeout 60
 ```
 
 ## pip using proxy
