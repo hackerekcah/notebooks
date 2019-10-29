@@ -32,3 +32,25 @@ proxychains pip install some-package
 # --upgrade works with upgrade and downgrade
 pip install --upgrade werkzeug==0.12.2
 ```
+
+## conda vs pip
+```
+Comparison of conda and pip
+conda	pip
+manages 
+
+binaries	wheel or source
+can require compilers	no	yes
+package types	any	Python-only
+create environment	yes, built-in	no, requires virtualenv or venv
+dependency checks	
+yes
+
+no
+
+package sources
+
+Anaconda repo and cloud
+
+PyPI
+```
