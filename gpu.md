@@ -22,25 +22,27 @@
    * initially for image rendering
    * Focus on small instruction set
    * Massive parallel computing, focus on throuput
-## install server
+## install GPU driver
 1）打开终端，先删除旧的驱动：
-
+```
 sudo apt-get purge nvidia*
-
+```
 2）禁用自带的 nouveau nvidia驱动
-
-创建一个文件通过命令 sudo vim /etc/modprobe.d/blacklist-nouveau.conf
-
-并添加如下内容：
-
+```
+sudo vim /etc/modprobe.d/blacklist-nouveau.conf
+# add these line
 blacklist nouveau
 options nouveau modeset=0
-
-再更新一下
-
+```
+```
 sudo update-initramfs -u
 
-修改后需要重启系统。确认下Nouveau是已经被你干掉，使用命令： lsmod | grep nouveau
+# reboot
+sudo reboot
+
+# check if Nouveau is killed
+lsmod | grep nouveau
+```
 
 3）重启系统至init 3（文本模式），也可先进入图形桌面再运行init 3进入文本模式，再安装下载的驱动就无问题，
 
