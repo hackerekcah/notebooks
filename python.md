@@ -203,3 +203,13 @@ import warnings
 warnings.filterwarnings('ignore',category=FutureWarning)
 ```
 
+## Read Audio Wave
+``` python
+import soundfile as sf
+
+x, fs = sf.read('aaa.wav')
+
+# scale to [-1, 1] if x is float
+x = x / max(abs(x))
+```
+
