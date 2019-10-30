@@ -55,3 +55,14 @@ screen -S du
 sudo /home/duzhihao/frp_0.25.3_linux_amd64/frpc -c /home/duzhihao/frp_0.25.3_linux_amd64/frpc.ini &
 ```
 
+## Install xrdp and mate
+1.安装mate
+sudo apt-get update
+sudo apt-get install mate-core mate-desktop-environment mate-notification-daemon	
+
+2.安装xrdp
+sudo apt-get install xrdp
+
+3.配置xrdp默认使用mate桌面系统
+sudo sed -i.bak '/fi/a #xrdp multiple users configuration \n mate-session \n' /etc/xrdp/startwm.sh
+
