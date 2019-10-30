@@ -1,12 +1,12 @@
 # Learning Python
 ## create dir
-```
+``` python
 if not os.path.isdir(my_dir):
     os.makedirs(my_dir)
 ```
 
 ## listdir
-```
+``` python
 import os
 
 for filename in os.listdir(directory):
@@ -15,7 +15,7 @@ for filename in os.listdir(directory):
 
 ## argparse, [api](https://docs.python.org/3/library/argparse.html),[tutorial](https://docs.python.org/3/howto/argparse.html)
 * example
-```
+``` python
 def run(args):
   pass
 if __name__ == '__main__':
@@ -30,7 +30,7 @@ if __name__ == '__main__':
 ```
 ## [Decorator](https://www.python-course.eu/python3_decorators.php)
 * decorator is a callable object that takes `Class` or `function` as input, modifiy it, and return another `class` or `function`
-```
+``` python
 def decorator(func):
   def decorated():
     do some thing
@@ -40,13 +40,13 @@ def decorator(func):
 foo = decorator(foo)
 ```
 * with decorator, syntext is simplified:
-```
+``` python
 @decorator
 def foo:
   pass
 ```
 * Complicated Use Case: Nested decorator which return decorator given arguments. [more](https://www.codementor.io/sheena/advanced-use-python-decorators-class-function-du107nxsv)
-```
+``` python
 def outer_decorator(*outer_args,**outer_kwargs):                            
     def decorator(fn):                                            
         def decorated(*args,**kwargs):                            
@@ -67,22 +67,22 @@ foo()
 plt.plot() method will not plot to screen by default, unless call plt.show()  
 interactively means each time add something to the plot.
 * check if interactive mode on
-```
+``` python
 matplotlib.is_interactive()
 ```
 * turn on
-```
+``` python
 matplotlib.pyplot.ion()
 # or
 matplotlib.interactive()
-```
+``` python
 * turn off
 ```
 matplotlib.pyplot.ioff()
 ```
 
 ## Run time
-```
+``` python
 import timeit
 start_time = timeit.default_timer()
 # code you want to evaluate
@@ -92,7 +92,7 @@ elapsed = timeit.default_timer() - start_time
 ## function arguments
 ### func def
 * arbitrary number of arguments, single star
-```
+``` python
 def f(*args)
   print(args)
   
@@ -100,7 +100,7 @@ f(1,2,'x')
 
 ```
 * arbitrary number of key word arguments, double star
-```
+``` python
 def f(**kwargs)
   print(kwargs)
   
@@ -109,7 +109,7 @@ f(arg1=hello)
 
 ### function call
 * single star to unpack a tuple as positional arguments
-```
+``` python
 def f(x,y,z):
   print(x,y,z)
 
@@ -118,7 +118,7 @@ f(*p)
 ```
 
 * double star to unpack a dictionary as like key words input
-```
+``` python
 def f(x,y,z):
   print(x,y,z)
   
@@ -127,7 +127,7 @@ f(**p)
 ```
 
 ### get arguments of a function
-```
+``` python
 # inside function
 saved_args = locals()
 print(saved_args)
