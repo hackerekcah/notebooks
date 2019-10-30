@@ -1,4 +1,12 @@
 # Learning Python
+## listdir
+```
+import os
+
+for filename in os.listdir(directory):
+    if filename.endswith(".asm") or filename.endswith(".py"): 
+```
+
 ## argparse, [api](https://docs.python.org/3/library/argparse.html),[tutorial](https://docs.python.org/3/howto/argparse.html)
 * example
 ```
