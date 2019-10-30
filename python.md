@@ -182,3 +182,10 @@ import pprint
 logging.info(pprint.pformat(vars(args)) if not isinstance(args, dict) else pprint.pformat(args))
 ```
 
+## ignore warnings
+```
+import warnings
+# can specify warning category
+warnings.filterwarnings('ignore',category=FutureWarning)
+```
+
