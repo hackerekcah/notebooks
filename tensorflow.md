@@ -11,3 +11,10 @@ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorfl
 
 ## Tensorflow and Keras
 Keras 2.2.5 is the last version with tensorflow 1
+
+## Tensorflow version
+* 1.15 is the last 1.X release.
+* For 1.15 tensorflow is in same package with tensorflow-gpu
+```
+conda install tensorflow=1.15
+```
