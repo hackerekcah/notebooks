@@ -45,3 +45,8 @@ pip install --upgrade werkzeug==0.12.2
 | dependency checks | yes      |    no |
 | package source | Anacodna repo and cloud | PyPI|
 
+## requirements.txt
+```
+pip freeze > requirements.txt
+```
+
