@@ -18,3 +18,5 @@ Keras 2.2.5 is the last version with tensorflow 1
 ```
 conda install tensorflow=1.15
 ```
+* 1.13.1 is compatible with CUDA10.0, 1.14 and 1.15 is not
+
