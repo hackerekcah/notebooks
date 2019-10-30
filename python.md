@@ -75,9 +75,9 @@ matplotlib.is_interactive()
 matplotlib.pyplot.ion()
 # or
 matplotlib.interactive()
-``` python
+``` 
 * turn off
-```
+``` python
 matplotlib.pyplot.ioff()
 ```
 
