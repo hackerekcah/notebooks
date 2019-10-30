@@ -1,4 +1,10 @@
 # Learning Python
+## create dir
+```
+if not os.path.isdir(my_dir):
+    os.makedirs(my_dir)
+```
+
 ## listdir
 ```
 import os
