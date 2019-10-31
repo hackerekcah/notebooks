@@ -263,3 +263,9 @@ git commit --amend
 `clone` also get .git file, so you have the full repository. while downloaded zip wouln't
 ```
 
+* git diff two branches
+```
+# comapre tips of two branches
+git diff branch_1..branch_2
+```
+
