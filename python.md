@@ -1,4 +1,14 @@
 # Learning Python
+
+## list documentation on objects (functions, variables, etc)
+```
+# help on sorted function
+help(sorted)
+
+# interactive help if not provide args
+help()
+```
+
 ## create dir
 ``` python
 if not os.path.isdir(my_dir):
