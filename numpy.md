@@ -48,3 +48,15 @@ array([[1, 2, 3],
 # or use None
 x[:, None, :, :]
 ```
+
+* `::`
+```
+# slice every step elements
+>>> a = [1,2,3,4,5,6,7,8,9]
+>>> a[::3]
+[1, 4, 7]
+
+# specify start
+>>> a[2::3]
+[3, 6, 9]
+```
