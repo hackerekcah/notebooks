@@ -69,3 +69,8 @@ sudo apt-get install xrdp
 ```
 sudo sed -i.bak '/fi/a #xrdp multiple users configuration \n mate-session \n' /etc/xrdp/startwm.sh
 ```
+
+## [IPMI](https://www.ibm.com/developerworks/cn/linux/l-ipmi/index.html)
+* Intelligent Platform Management Interface
+* Talk to BMC(Baseboard Management Controller)
+* `ipmitool` and `ipmiutil`
