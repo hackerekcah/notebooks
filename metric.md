@@ -25,5 +25,8 @@ AP = sum_n (R_n - R_{n-1}) P_n
 ```
 micro: ignore classes, directly calculate metrics.
 macro: calculate metric per-classes, then average the metrics.
+mAP: mean Average Precision, over classes
 ```
+
+
 
