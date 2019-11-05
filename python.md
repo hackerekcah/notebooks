@@ -223,5 +223,17 @@ x, fs = sf.read('aaa.wav')
 x = x / max(abs(x))
 ```
 
+## `yield`
+* `yield` is used for `return` in a generator
+* A generator is a iterable, but can only iterate onece.
+```
+>>> mygenerator = (x*x for x in range(3))
+>>> for i in mygenerator:
+...    print(i)
+0
+1
+4
+```
+
 
 
