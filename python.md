@@ -223,9 +223,10 @@ x, fs = sf.read('aaa.wav')
 x = x / max(abs(x))
 ```
 
-## `yield`
+## [`yield`](https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do)
 * `yield` is used for `return` in a generator
-* A generator is a iterable, but can only iterate onece.
+* A generator is a iterable, but can only iterate onece, it generate values on the fly
+* Not store all values in the memory, on the fly way
 ```
 >>> mygenerator = (x*x for x in range(3))
 >>> for i in mygenerator:
