@@ -10,7 +10,8 @@ FPR = FP/N = FP / (FP + TN)
 
 # [Precision-Recall & AP (average_precision_score)](https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html#sphx-glr-auto-examples-model-selection-plot-precision-recall-py)
 * AP is a summary of Precision-Recall curve
-* precision (y-axis) vs recall, not necessary 
+* precision (y-axis) vs recall
+* Useful when classes are unbalanced.
 ```
 Precision = TP / (TP + FP)
 
