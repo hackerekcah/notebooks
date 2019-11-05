@@ -62,8 +62,8 @@ x[:, None, :, :]
 ```
 
 ## [np.where](https://docs.scipy.org/doc/numpy/reference/generated/numpy.where.html)
-* np.where(condition[,x, y])
+* np.where(condition[,x, y]) \\
        * Return elements chosen from x or y depending on condition.
-* np.where(x)
+* np.where(x) \\
        * same as np.nonzero(x)
        * return indices of the elements that are non-zero.
