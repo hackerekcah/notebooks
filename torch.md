@@ -36,10 +36,17 @@ CUDA_VISIBLE_DEVICES=5 python myapp.py
 ### 4.1 Methods
 * `.parameters()` return all learnable parameters as a generator
 * `.zero_grad()` zeros all parameters' grad
-* `.to(torch.device/torch.dtype/torch.tensor)` move parameters & buffers to device/dtype/tensor(i.e. device+dtype) (modify in-place)
+* `.to(torch.device/torch.dtype/torch.tensor)` 
+  * move parameters & buffers to device/dtype/tensor(i.e. device+dtype) (modify in-place)
 * `.cuda(device) / .cpu()` move paramters & buffers to gpu / cpu
 * `.modules() / .children() / .named_modules() / .named_children() / .named_parameters()`
 * `.apply(fn)` apply function recursively to each Modules inside
+
+### 4.2 Define my own buffers
+```
+# register in __init__, then can use self.my_buffer_name in forward()
+self.register_buffer('my_buffer_name', torch.tensor(3.0, dtype=torch.float))
+```
 
 ## 5.Control flow and dynamic graph
 * Each forward pass will define a graph on the fly (dynamicly), thus could use python control flow (if / for etc.)
