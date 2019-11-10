@@ -225,3 +225,9 @@ def set_seed(seed):
 ### 14. `model.eval()` vs with `torch.no_grad():`
 * `model.eval()` make `BatchNorm` and `Dropout` layer works in evaluation mode
 * `torch.no_grad()` ignore gradient calculation, faster and less memory usage during evaluation
+
+### 15. move tensor to cpu or gpu
+```
+# must assign back to the tensor
+my_tensor = my_tensor.cpu()
+```
