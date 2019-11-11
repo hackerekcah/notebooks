@@ -50,3 +50,8 @@ pip install --upgrade werkzeug==0.12.2
 pip freeze > requirements.txt
 ```
 
+## Package sourece file location
+```
+import mypackage
+mypackage.__file__
+```
