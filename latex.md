@@ -3,6 +3,7 @@
 ## install latex and editors on windows
 * install MikTex on windows
 * MikTex is a LaTeX distribution, including `tex, latex, pdftex, pdflatex`
+  * install packages in MikTex, and then \usepackage{} in TexStudio
 * install TexStudio on windows  
   ** TexStudio internally use latex from MikTex
   
@@ -34,7 +35,7 @@
   * eprintclass={cs.SD}
   * eprint={xxxx.xxxx}
   
-## Beamer
+## Beamer, latex ppt
 * [Beamer wiki](https://en.wikibooks.org/wiki/LaTeX/Presentations)
 * example
 ```
@@ -97,7 +98,40 @@ attention is effective for domain mismatch.
 \setbeamertemplate{bibliography item}{\insertbiblabel}
 ```
 ## notes
-* Not  in math
+* Not in math
 ```
 {\rm sigmoid}(x)
+```
+
+## code blocks
+* `listings` package
+```
+\usepackage{listings}
+\usepackage{xcolor}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
 ```
