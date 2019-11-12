@@ -44,6 +44,13 @@ subgroup2/dataset_three
 .dtype
 ```
 * indexing like numpy array
+```
+# get numpy array from dataset
+arr = dset[:]
+
+# 可以赋值
+dset[…]=np.arrange(100)
+```
 * create dataset
 ```
 # using existing array
