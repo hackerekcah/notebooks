@@ -44,7 +44,18 @@ subgroup2/dataset_three
 .dtype
 ```
 * indexing like numpy array
+* create dataset
+```
+# using existing array
+>>> arr = np.arange(100)
+>>> dset = f.create_dataset("init", data=arr)
+```
 ### Attributes, also works like dict
 ```
 dset.attrs['temperature'] = 99.5
 ```
+* Attributs有如下特点
+  * 可以由任何numpy array或者scalar创建
+  * 每个attribute应该小 <64k
+  * 不可以slice，读的时候必须整个读
+
