@@ -18,6 +18,10 @@ f = h5py.File('mytestfile.hdf5', 'r')
 >>> subgrp.name
 '/bar/baz'
 ```
+* create nested group
+```
+f.create_group(“/some/long/path”)
+```
 * iterating over a group only yields its directly-attached members
 * iter over whole file using `.visit()` and `.visititems()` methods of group.
   * [.visit()](http://docs.h5py.org/en/stable/high/group.html#Group.visit)
@@ -32,7 +36,14 @@ subgroup2
 subgroup2/dataset_three
 ```
 ### Dataset
-
+* similar to numpy array
+* each dataset has basic attribute like numpy array
+```
+.shape
+.size
+.dtype
+```
+* indexing like numpy array
 ### Attributes, also works like dict
 ```
 dset.attrs['temperature'] = 99.5
