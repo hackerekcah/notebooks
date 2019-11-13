@@ -260,4 +260,17 @@ x = x / max(abs(x))
 sys.path.insert(0, '/to/your/path')
 ```
 
+### Relative import
+* Relative imports use leading dots
+  * A single leading dot indicates a relative import, starting with the current package.
+* absolute import use 
+```
+import <>
+from <> import <>
+```
+* relative import can only use the second form
+```
+form .<> import <>
+```
+
 
