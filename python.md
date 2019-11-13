@@ -243,7 +243,10 @@ x = x / max(abs(x))
 * all packages are modules, not all modules are packages.
   * if a module has `__path__` attribute, its a package
 * `package` needs to have `__init__.py` file in the directory.
-  * when a package in imported, `__init__.py` file is implicitly executed, and the objects it defines are bound to names in the package’s namespace.
+  
+### `__init__.py`
+* when a package is imported, `__init__.py` file is implicitly executed, and the objects it defines are bound to names in the package’s namespace.
+* when a subpackage is imported, parent package's `__init__.py` will also be excuted.
 ### import process
 * search for a module, then bind it to a name in local scope
 ### searching
