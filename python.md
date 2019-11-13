@@ -236,5 +236,28 @@ x = x / max(abs(x))
 4
 ```
 
+## import
+### modules and packages
+* `packages` are special `modules`, like directories. 
+* `modules` are python file with `.py` extention
+* all packages are modules, not all modules are packages.
+  * if a module has `__path__` attribute, its a package
+* `package` needs to have `__init__.py` file in the directory.
+### import process
+* search for a module, then bind it to a name in local scope
+### searching
+* First look up `sys.modules`, a dictionary with recent imported moduels.
+* Next, search `sys.meta_path`, a list of meta path finder objects
+* Then `sys.path` , a list of locations may contain system path or zip file
+### Finders and Loaders
+* Finders return a `module spec`, exposed as `__spec__` attribte of the module
+* Loaders excute the moduel
+  * loader should excute module's code in modules global name space (module.__dict__)
+
+### Add to search path
+```
+# insert a path to the front of the path list
+sys.path.insert(0, '/to/your/path')
+```
 
 
