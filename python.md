@@ -247,6 +247,14 @@ x = x / max(abs(x))
 ### `__init__.py`
 * when a package is imported, `__init__.py` file is implicitly executed, and the objects it defines are bound to names in the package’s namespace.
 * when a subpackage is imported, parent package's `__init__.py` will also be excuted.
+*  if a package’s __init__.py code defines a list named __all__, it is taken to be the list of module names that should be imported when from package import * is encountered
+```
+# sound_effect/__init__.py
+__all__ = ["echo", "surround", "reverse"]
+
+# then this command will import the three moduels in __all__
+from sound_effect import *
+```
 ### import process
 * search for a module, then bind it to a name in local scope
 ### searching
