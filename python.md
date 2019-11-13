@@ -236,7 +236,7 @@ x = x / max(abs(x))
 4
 ```
 
-## import
+## [import](https://docs.python.org/3/reference/import.html)
 ### modules and packages
 * `packages` are special `modules`, like directories. 
 * `modules` are python file with `.py` extention
