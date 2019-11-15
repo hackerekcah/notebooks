@@ -183,7 +183,7 @@ for hdlr in logger.handlers[:]:  # remove all old handlers
     logger.removeHandler(hdlr)
 
 logger.addHandler(fileh)
-logger.addHander(streamh)
+logger.addHandler(streamh)
 ```
 
 ## logging argparse arguments
