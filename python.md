@@ -285,4 +285,9 @@ from <> import <>
 form .<> import <>
 ```
 
+## [python -m <module-name>](https://docs.python.org/2/using/cmdline.html#cmdoption-m)
+* <module-name>, without `.py`
+* will search `sys.path` for the module
+* if a package name is provided, <pkg>.__main__ is excuted.
+
 
