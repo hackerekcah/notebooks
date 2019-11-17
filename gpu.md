@@ -35,10 +35,12 @@ sudo vim /etc/modprobe.d/blacklist-nouveau.conf
 # add these line
 blacklist nouveau
 options nouveau modeset=0
-```
-```
-sudo update-initramfs -u
 
+# Regenerate the kernel initramfs
+sudo update-initramfs -u
+```
+* Reboot
+```
 # reboot
 sudo reboot
 
