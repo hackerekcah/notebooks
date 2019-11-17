@@ -59,3 +59,10 @@ lsmod | grep nouveau
 4）接下来就是最关键的一步了：sudo./NVIDIA.run开始安装，安装过程比较快，根据提示选择即可最后安装完毕后，重新启动X-Window：sudo service lightdm start，然后Ctrl+Alt+F7进入图形界面；
 
 * [Links to Nvidia official gpu driver download page](https://www.nvidia.com/Download/index.aspx?lang=en-us)
+* cudatoolkit may installed at
+```
+/usr/lib/x84_64-linux-gnu
+
+# may find libcuda using
+ldconfig -p |grep libcuda
+```
