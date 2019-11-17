@@ -24,7 +24,7 @@
    * Massive parallel computing, focus on throuput
 ## Install GPU driver
 
-* [GPU Driver vs GPU CUDA Toolkit](https://docs.nvidia.com/deploy/cuda-compatibility/index.html#binary-compatibility__table-toolkit-driver)
+* [GPU Driver vs GPU CUDA Toolkit](https://docs.nvidia.com/deploy/cuda-compatibility/index.html#binary-compatibility__table-toolkit-driver)  
 1）打开终端，先删除旧的驱动：
 ```
 sudo apt-get purge nvidia*
