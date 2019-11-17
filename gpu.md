@@ -55,3 +55,5 @@ lsmod | grep nouveau
 关闭X-Window，很简单：sudo service lightdm stop，然后切换tty1控制台：Ctrl+Alt+F1即可
 
 4）接下来就是最关键的一步了：sudo./NVIDIA.run开始安装，安装过程比较快，根据提示选择即可最后安装完毕后，重新启动X-Window：sudo service lightdm start，然后Ctrl+Alt+F7进入图形界面；
+
+* [Links to Nvidia official gpu driver download page](https://www.nvidia.com/Download/index.aspx?lang=en-us)
