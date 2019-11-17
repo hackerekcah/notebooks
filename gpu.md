@@ -27,7 +27,9 @@
 ```
 sudo apt-get purge nvidia*
 ```
-2）禁用自带的 nouveau nvidia驱动
+2）Disable Nouveau
+* nouveau is a open source gpu driver project for supporting nvidia drivers
+* nouveau did not support CUDA.
 ```
 sudo vim /etc/modprobe.d/blacklist-nouveau.conf
 # add these line
