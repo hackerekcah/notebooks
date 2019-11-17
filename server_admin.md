@@ -74,3 +74,15 @@ sudo sed -i.bak '/fi/a #xrdp multiple users configuration \n mate-session \n' /e
 * Intelligent Platform Management Interface
 * Talk to BMC(Baseboard Management Controller)
 * `ipmitool` and `ipmiutil`
+
+## `ldconfig`
+* config dynamic linker run-time bindings
+* search pathes
+```
+/etc/ld.so.conf.d/
+```
+* Find dynamic library 
+```
+# e.g. find where libcuda.so is installed
+ldconfig -p | grep libcuda
+```
