@@ -231,3 +231,18 @@ def set_seed(seed):
 # must assign back to the tensor
 my_tensor = my_tensor.cpu()
 ```
+
+### 16. [torch.nn.DataParallel](https://pytorch.org/docs/stable/nn.html?highlight=torch%20nn#dataparallel)
+```
+# a list of gpu ids (int)
+args.device_ids = [0, 1, 2, 3]
+
+# must move model to the first gpu of the gpu_id list, before making multi-gpus
+device = torch.device('cuda:{}'.format(args.device_ids[0]))
+
+model = model.to(device)
+
+if len(args.device_ids) > 1:
+	model = torch.nn.DataParallel(module=model, device_ids=args.device_ids)
+
+```
