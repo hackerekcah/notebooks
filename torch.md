@@ -266,5 +266,30 @@ hook(module, input, output) -> None or modified output
 hook(module, grad_input, grad_output) -> Tensor or None
 ```
 
-## `Module.__call__(x)` vs `Module.forward(x)`
+## 18. `Module.__call__(x)` vs `Module.forward(x)`
 * `.__call__` will call all the hooks registered, except calling `.forward()`
+
+## 19. Model finetuning
+* Freeze part of model
+```
+class A(torch.nn.Module):
+        self.b = ...
+        self.c = ...
+
+m = A()
+
+# will not backprop through b, thus save computation and storage
+for para in m.b.parameters():
+	para.requires_grad = False
+
+# only update c's parameters
+optimizer = torch.optim.Adam(m.c.parameters(), lr=1e-3)
+```
+* Finetuning with different learning rate, [see](https://pytorch.org/docs/stable/optim.html#per-parameter-options)
+```
+# passing as a dict
+optim.SGD([
+                {'params': model.base.parameters(), 'lr': 1e-4},
+                {'params': model.classifier.parameters(), 'lr': 1e-3}
+            ], lr=1e-2, momentum=0.9)
+```
