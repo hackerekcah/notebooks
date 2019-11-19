@@ -252,15 +252,15 @@ model = model.to(device)
 ```
 
 ## 17. hooks
-*  `Module.register_forward_hook(self, hook)`
+### 17.1  `Module.register_forward_hook(self, hook)`
 * The hook is called after .forward() is called
 ```
 # forward hook's signature
 hook(module, input, output) -> None or modified output
 ```
-* `register_backward_hook(self, hook)`
-  * The :attr:`grad_input` and :attr:`grad_output` may be tuples if the module has multiple inputs or outputs.
-  * The hook is called every time the gradients with respect to module inputs are computed
+### 17.2 `register_backward_hook(self, hook)`
+* The :attr:`grad_input` and :attr:`grad_output` may be tuples if the module has multiple inputs or outputs.
+* The hook is called every time the gradients with respect to module inputs are computed
 ```
 # backward hook's signature
 hook(module, grad_input, grad_output) -> Tensor or None
@@ -270,7 +270,7 @@ hook(module, grad_input, grad_output) -> Tensor or None
 * `.__call__` will call all the hooks registered, except calling `.forward()`
 
 ## 19. Model finetuning
-* Freeze part of model
+### 19.1 Freeze part of model
 ```
 class A(torch.nn.Module):
         self.b = ...
@@ -285,7 +285,7 @@ for para in m.b.parameters():
 # only update c's parameters
 optimizer = torch.optim.Adam(m.c.parameters(), lr=1e-3)
 ```
-* Finetuning with different learning rate, [see](https://pytorch.org/docs/stable/optim.html#per-parameter-options)
+### 19.2 Finetuning with different learning rate, [see](https://pytorch.org/docs/stable/optim.html#per-parameter-options)
 ```
 # passing as a dict
 optim.SGD([
