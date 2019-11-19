@@ -250,3 +250,18 @@ device = torch.device('cuda:{}'.format(args.device_ids[0]))
 
 model = model.to(device)
 ```
+
+## 17. hooks
+*  `Module.register_forward_hook(self, hook)`
+* The hook is called after .forward() is called
+```
+# forward hook's signature
+hook(module, input, output) -> None or modified output
+```
+* `register_backward_hook(self, hook)`
+  * The :attr:`grad_input` and :attr:`grad_output` may be tuples if the module has multiple inputs or outputs.
+  * The hook is called every time the gradients with respect to module inputs are computed
+```
+# backward hook's signature
+hook(module, grad_input, grad_output) -> Tensor or None
+```
