@@ -265,3 +265,6 @@ hook(module, input, output) -> None or modified output
 # backward hook's signature
 hook(module, grad_input, grad_output) -> Tensor or None
 ```
+
+## `Module.__call__(x)` vs `Module.forward(x)`
+* `.__call__` will call all the hooks registered, except calling `.forward()`
