@@ -38,9 +38,9 @@ if __name__ == '__main__':
   args = parser.parse_args()
   run(args)
 ```
-### 4.1 Special care for `bool` type
+### 4.1 Special care for `True` or `False` flag
 ```
-parse.add_argument('--myflag', default=False, type=bool, action='store_true')
+parse.add_argument('--myflag', default=False, action='store_true')
 
 # by default, this will have args.myflag=False
 python main.py
