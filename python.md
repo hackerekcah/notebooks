@@ -38,6 +38,18 @@ if __name__ == '__main__':
   args = parser.parse_args()
   run(args)
 ```
+### 4.1 Special care for `bool` type
+```
+parse.add_argument('--myflag', default=False, type=bool, action='store_true')
+
+# by default, this will have args.myflag=False
+python main.py
+
+# this will have args.myflag = True
+python main.py --myfalg
+
+
+```
 ## 5. [Decorator](https://www.python-course.eu/python3_decorators.php)
 * decorator is a callable object that takes `Class` or `function` as input, modifiy it, and return another `class` or `function`
 ``` python
