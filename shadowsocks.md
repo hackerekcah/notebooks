@@ -4,11 +4,11 @@ sslocal -c /etc/shadowsocks.json -d start
 
 # /etc/shadowsocks.json
 {
-"server":"198.98.62.68",
-"server_port":40004,
+"server":"205.185.117.151",
+"server_port":40001,
 "local_address": "192.168.11.211",
 "local_port":7070,
-"password":"password4",
+"password":"password1",
 "timeout":600,
 "method":"aes-256-cfb"
 }
@@ -22,37 +22,20 @@ ssserver -c /etc/shadowsocks.json -d start
 
 # new config file: /etc/shadowsocks.json
 {
-  "timeout": 600,
-  "method": "aes-256-csb",
-  "port_password":
-  {
-    "40001": "password1",
-    "40002": "password2",
-    "40003": "password3"
-  },
-  "_comment":
-  {
-    "40001": "xiaoming",
-    "40002": "lilei",
-    "40003": "mike"
-  }
+    "server":"205.185.117.151",
+    "server_port":40001,
+    "local_port":40001,
+    "password":"password1",
+    "timeout":600,
+    "method":"aes-256-cfb"
 }
-
-# add in /etc/hosts on shadowsocks server, to prevent google robot detection, as in https://www.skyfly.xyz/2017/08/02/Casual/SolutionForGoogleRecaptcha/
-
-2607:f8b0:4005:801::200e google.com
-2607:f8b0:4005:801::200e www.google.com
-2404:6800:4005:807::2003 google.com.hk
-2404:6800:4005:807::2003 www.google.com.hk
-2404:6800:4005:807::2003 google.com.tw
-2404:6800:4005:807::2003 www.google.com.tw
 
 # stallion
 https://manage.buyvm.net/login
 b234abee3b06457a
 
 # ssh server
-ssh root@198.98.62.68
+ssh root@205.185.117.151
 # passwd
 604
 
