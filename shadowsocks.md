@@ -68,3 +68,25 @@ set proxy, socks5, port 443
 ```
 https://s3.amazonaws.com/outline-vpn/invite.html?admin_embed#/zh-CN/invite/ss%3A%2F%2FY2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpaR0s2RVhvbmZkaUM%3D%40205.185.117.151%3A20162%2F%3Foutline%3D1
 ```
+
+# Wlan
+```
+202.118.228.98
+255.255.255.0
+202.118.228.254
+
+#DNS
+202.118.224.100
+202.118.224.101
+```
+
+# MAC
+```
+00-E0-4C-3C-E4-0E
+```
+
+# PPPOE
+```
+zhl60401
+zhl60801
+```
