@@ -86,3 +86,19 @@ sudo sed -i.bak '/fi/a #xrdp multiple users configuration \n mate-session \n' /e
 # e.g. find where libcuda.so is installed
 ldconfig -p | grep libcuda
 ```
+
+## check server serial number
+* get hardware infomation using `lshw`
+```
+sudo lshw -C system
+```
+```
+213:
+    product: NF5568M4 (Default string)
+    vendor: Inspur
+    version: 0123456789
+    serial: 217336903
+
+```
+
+* [Inspur ipmitool](http://www.4008600011.com/archives/15141#2linux)
