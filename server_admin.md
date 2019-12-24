@@ -112,4 +112,4 @@ modprobe ipmi_devintf
 modprobe ipmi_si
 ```
 
-* [BMC设置]（http://www.4008600011.com/archives/9942）
+* [Inspur NF5568M4 BMC 设置](http://www.4008600011.com/archives/9942)
