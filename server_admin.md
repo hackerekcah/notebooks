@@ -102,3 +102,12 @@ sudo lshw -C system
 ```
 
 * [Inspur ipmitool](http://www.4008600011.com/archives/15141#2linux)
+```
+# install ipmitool
+sudo apt-get install ipmitool
+
+# install ipmi device driver, will show up as /dev/ipmi0
+modprobe ipmi_msghandler
+modprobe ipmi_devintf
+modprobe ipmi_si
+```
