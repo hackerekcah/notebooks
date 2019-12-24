@@ -111,3 +111,5 @@ modprobe ipmi_msghandler
 modprobe ipmi_devintf
 modprobe ipmi_si
 ```
+
+* [BMC设置]（http://www.4008600011.com/archives/9942）
