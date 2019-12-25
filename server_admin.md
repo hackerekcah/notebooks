@@ -124,3 +124,7 @@ modprobe ipmi_si
 ## [SCSI wikipedia](https://en.wikipedia.org/wiki/SCSI)
 * Small Computer System Interface, a standards for physically connecting computer to peripherials
 * A physical implementation of SCSI is SAS(Serial attached SCSI), common used as hard disk connection
+
+## SAS vs SATA
+* SATA, cheap, for personal computers, power and data use seperate lines
+* SAS, expensive, for servers, more reliable, power and data in one single line
