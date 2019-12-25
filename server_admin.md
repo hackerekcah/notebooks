@@ -117,4 +117,5 @@ modprobe ipmi_si
 * 微信公众号报修：浪潮专家服务
 
 ## [RAID](https://www.cnblogs.com/oneasdf/p/9367152.html)
+* [知乎RAID帖](https://www.zhihu.com/question/20131784)
 * [浪潮RAID配置](http://www.4008600011.com/archives/429?jdfwkey=mvahm3)
