@@ -119,7 +119,11 @@ modprobe ipmi_si
 ## [RAID](https://www.cnblogs.com/oneasdf/p/9367152.html)
 * [知乎RAID帖](https://www.zhihu.com/question/20131784)
 * [浪潮RAID配置](http://www.4008600011.com/archives/429?jdfwkey=mvahm3)
-
+* server RAID:
+```
+slot0, SSD-SATA, 447G,
+slot1-5, SATA, 1.8T
+```
 
 ## [SCSI wikipedia](https://en.wikipedia.org/wiki/SCSI)
 * Small Computer System Interface, a standards for physically connecting computer to peripherials
@@ -128,3 +132,4 @@ modprobe ipmi_si
 ## SAS vs SATA
 * SATA, cheap, for personal computers, power and data use seperate lines
 * SAS, expensive, for servers, more reliable, power and data in one single line
+
