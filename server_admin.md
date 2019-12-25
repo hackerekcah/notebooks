@@ -115,3 +115,6 @@ modprobe ipmi_si
 
 * [Inspur NF5568M4 BMC 设置](http://www.4008600011.com/archives/9942)
 * 微信公众号报修：浪潮专家服务
+
+## [RAID](https://www.cnblogs.com/oneasdf/p/9367152.html)
+* [浪潮RAID配置](http://www.4008600011.com/archives/429?jdfwkey=mvahm3)
