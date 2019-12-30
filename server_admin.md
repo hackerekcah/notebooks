@@ -1,11 +1,14 @@
 # Server
 ## Server fix log
 ### 
-* 211 电源坏，表现：电源灯不亮，性能下降。解决：热插拔，更换。
-* 213 内存坏，启动自检时报内存错，显示具体内存卡槽位置。
+* 211 电源坏
+  * 表现：电源灯不亮，性能下降。
+  * 解决：热插拔，更换。
+* 213 内存坏
+  * 表现：启动自检时报内存错，但不影响正常开机。文字显示具体损坏的内存卡槽位置。
   * 关机，打开机箱（机箱后有两个小螺丝，卸掉即可），找到对应内存卡槽，更换重启即可。
 * 213 硬盘slot5坏
-  * 表现：机器一直报警：嘟-嘟-...,确认方法：在RAID界面，按ctrl+R，PD Mgmt菜单，显示slot5 硬盘Failed. 其他硬盘online。
+  * 表现：机器一直报警：嘟-嘟-...。确认方法：在RAID界面，按ctrl+R，PD Mgmt菜单，显示slot5 硬盘Failed. 其他硬盘online。
   * 解决：热插拔硬盘，重启，按ctrl+R，更换硬盘，看到硬盘状态由failed变为Rebuild，具体可看到progress百分比，一般Rebuild需要两天。
 
 ## [Intel MKL, Math Kernel Library](https://software.intel.com/en-us/mkl/choose-download/linux)
