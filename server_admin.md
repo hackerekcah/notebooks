@@ -144,3 +144,47 @@ slot1-5, SATA, 1.8T
 * SATA, cheap, for personal computers, power and data use seperate lines
 * SAS, expensive, for servers, more reliable, power and data in one single line
 
+## Install Matlab R2019b
+* 单机多用户安装，需要向网络中心提供：1主机系统，主机mac地址，作为hostid。网络中心提供对应的license.lic文件和File Installatin Key (FIK)
+* 查看mac地址
+```
+# HWaddr field of eno1 is mac address
+sudo ifconfig -a
+```
+* 安装lsb库，否则network license server无法启动
+```
+sudo apt-get install lsb
+```
+* 挂载iso文件
+```
+sudo mkdir /mnt/iso
+
+sudo mount -t auto -o loop ./R2019b_Linux.iso /mnt/iso
+```
+* 安装network license server
+```
+# 进入安装界面，输入license.lic的路径和FIK，选择只安装Network License Server
+sudo /mnt/iso/install
+
+# 手动启动license manager
+/usr/local/MATLAB/R2019b/etc/lmstart
+
+# 为保证license manager开机自动启动，在rc.local中加入如下一行
+# 注意，这里用任意用户即可，但不可使用root运行lmstart
+su songhongwei -c "/usr/local/MATLAB/R2019b/lmstart"
+```
+* 此时，会产生`/usr/local/MATLAB/R2019b/etc/licence.dat`文件，文件中的前两行如。所有使用此License Server的client均需使用此.dat文件作为license。
+```
+# SERVER 主机名 MAC地址，端口号
+SERVER node04 AC1F6B21D4DE 27000
+DAEMON MLM "/usr/local/MATLAB/R2019b/etc/MLM"
+```
+* 安装matlab client
+```
+# 输入FIK和/usr/local/MATLAB/R2019b/etc/licence.dat文件
+/mnt/iso/install
+```
+* 查看是否安装成功
+```
+/usr/local/MATLAB/R2019b/bin/matlab
+```
