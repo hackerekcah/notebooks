@@ -196,3 +196,12 @@ sudo /mnt/iso/install
 ```
 * 安装教程
 * [install concurrent matlab](https://cn.mathworks.com/matlabcentral/answers/152585-concurrent-matlab-8-1-r2013a)
+
+## Matlab license manager 管理工具
+* 管理License的工具书
+  * `/usr/local/MATLAB/R2019b/etc/LicenseAdministration.pdf`
+* `/usr/local/MATLAB/R2019b/etc/glnxa64/lmgrd`是
+* 若输入matlab指令，显示`unable to connect to license server`错误，一般是license server未启动，运行
+```
+/usr/local/MATLAB/R2019b/etc/lmstart
+```
