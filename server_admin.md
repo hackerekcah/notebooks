@@ -145,8 +145,13 @@ slot1-5, SATA, 1.8T
 * SAS, expensive, for servers, more reliable, power and data in one single line
 
 ## Install Matlab R2019b
-* 单机多用户安装，需要向网络中心提供：1主机系统，主机mac地址，作为hostid。网络中心提供对应的license.lic文件和File Installatin Key (FIK)
-* 查看mac地址
+* 单机多用户安装，需要向网络中心发邮件阐明：
+  * 1主机系统
+  * 2主机mac地址，作为hostid。
+* 网络中心会提供:
+  * 对应的license.lic文件
+  * File Installatin Key (FIK)
+* 查看本机mac地址
 ```
 # HWaddr field of eno1 is mac address
 sudo ifconfig -a
