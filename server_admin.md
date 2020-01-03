@@ -187,9 +187,12 @@ DAEMON MLM "/usr/local/MATLAB/R2019b/etc/MLM"
 * 安装matlab client
 ```
 # 输入FIK和/usr/local/MATLAB/R2019b/etc/licence.dat文件
-/mnt/iso/install
+# 选择安装除Network License Server之外的所有产品。
+sudo /mnt/iso/install
 ```
 * 查看是否安装成功
 ```
 /usr/local/MATLAB/R2019b/bin/matlab
 ```
+* 安装教程
+* [install concurrent matlab](https://cn.mathworks.com/matlabcentral/answers/152585-concurrent-matlab-8-1-r2013a)
