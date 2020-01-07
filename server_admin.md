@@ -200,7 +200,10 @@ sudo /mnt/iso/install
 ## Matlab license manager 管理工具
 * 管理License的工具书
   * `/usr/local/MATLAB/R2019b/etc/LicenseAdministration.pdf`
-* `/usr/local/MATLAB/R2019b/etc/glnxa64/lmgrd`是
+* `/usr/local/MATLAB/R2019b/etc/glnxa64/lmgrd`
+```
+./lmgrd -c <PATH_TO_LICENSE_FILE> -l <PATH_TO_LOG_FILE>
+```
 * 若输入matlab指令，显示`unable to connect to license server`错误，一般是license server未启动，运行
 ```
 /usr/local/MATLAB/R2019b/etc/lmstart
