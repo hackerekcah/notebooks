@@ -14,6 +14,16 @@ np.save('test', val1, mykey=val2)
 data = np.load('test.npz')
 ```
 
+## npz to csv
+```
+for npz_file in os.listdir(dir):
+    if npz_file.endswith('.npz'):
+       # data works like a dictionary
+        data = np.load(os.path.join(dir, npz_file))
+        csv_file = os.path.join(dir, npz_file[:-4] + '.csv')
+        np.savetxt(csv_file, data['embedding'], delimiter=',')
+```
+
 ## prevent divide by zero
 ```
 data = np.divide(data-mu, sigma, out=np.zeros_like(data), where=sigma!=0)
