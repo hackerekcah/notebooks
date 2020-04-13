@@ -23,6 +23,7 @@
    * Focus on small instruction set
    * Massive parallel computing, focus on throuput
 ## Install GPU driver
+* [Official Installation Guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#runfile)
 
 * [GPU Driver vs GPU CUDA Toolkit](https://docs.nvidia.com/deploy/cuda-compatibility/index.html#binary-compatibility__table-toolkit-driver)  
 1）打开终端，先删除旧的驱动：
