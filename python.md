@@ -297,6 +297,12 @@ from <> import <>
 form .<> import <>
 ```
 
+### 15.8 List imported modules in local scope
+``` python
+>>> dir()
+['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'sys']
+```
+
 ## 16. [python -m `<module-name>`](https://docs.python.org/2/using/cmdline.html#cmdoption-m)
 * `<module-name>`, without `.py`
 * will search `sys.path` for the module
