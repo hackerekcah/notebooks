@@ -267,6 +267,9 @@ __all__ = ["echo", "surround", "reverse"]
 # then this command will import the three moduels in __all__
 from sound_effect import *
 ```
+### 15.2.1 `__main__`
+* module `__main__.py` under `somepackage` will be run if run a package `python -m somepackage`
+* When a module is run, its `__name__` attribute will be replaced by `__main__`
 ### 15.3 import process
 * search for a module, then bind it to a name in local scope
 ### 15.4 searching
