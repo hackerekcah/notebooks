@@ -303,6 +303,14 @@ form .<> import <>
 ['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'sys']
 ```
 
+### 15.9 `PYTHONPATH` environment variable
+* `PYTHONPATH` will be added to `sys.path`
+* Pycharm will automatically add content root and source root to PYTHONPATH
+* export a python path
+```
+export PYTHONPATH='/some/path'
+```
+
 ## 16. [python -m `<module-name>`](https://docs.python.org/2/using/cmdline.html#cmdoption-m)
 * `<module-name>`, without `.py`
 * will search `sys.path` for the module
