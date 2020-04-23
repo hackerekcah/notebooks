@@ -298,3 +298,10 @@ gigaFLOPS	GFLOPS	10^9
 teraFLOPS	TFLOPS	10^12
 petaFLOPS	PFLOPS	10^15
 ```
+## memory
+* check total memory
+```
+> grep MemTotal /proc/meminfo
+MemTotal:       528269840 kB = 512 GB
+```
+
