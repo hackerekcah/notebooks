@@ -304,4 +304,12 @@ petaFLOPS	PFLOPS	10^15
 > grep MemTotal /proc/meminfo
 MemTotal:       528269840 kB = 512 GB
 ```
+## GPU
+* [Tesla K80 main page](https://www.nvidia.com/en-gb/data-center/tesla-k80/)
+* [Tesla K80 datasheet](https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/tesla-product-literature/TeslaK80-datasheet.pdf)
+```
+Peak double-precision floating point performance (board)   1.87 Tflops
 
+# we have 3 Tesla K80, so
+1.87 * 3 = 5.61 TFLOPS
+```
