@@ -289,3 +289,12 @@ GFLOPS 409.6
 # we have two chips, so 
 GFLOPS 409.6 * 2
 ```
+* GFLOPS vs TFLOPS
+```
+Name	Unit	Value
+kiloFLOPS	kFLOPS	10^3
+megaFLOPS	MFLOPS	10^6
+gigaFLOPS	GFLOPS	10^9
+teraFLOPS	TFLOPS	10^12
+petaFLOPS	PFLOPS	10^15
+```
