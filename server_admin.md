@@ -274,4 +274,18 @@ power management:
 processor       : 1
 ...(similar page for each processor!!!)
 ```
+* calculate cpu FLOPS
+  * Formula: 
+```
+  FLOPS = sockets * (cores per socket) * (number of clock cycles per second) * (number of floating point operations per cycle).
+  FLOPS = 2 * 8 * 2(threads per cores) * 3.2GHz * 
+```
+  * intel website
+  * [Export Compliance Metrics for Intel® Microprocessors](https://www.intel.com/content/www/us/en/support/articles/000005755/processors.html)
+  * [Export Compliance Metrics, Page 2](https://www.intel.com/content/dam/support/us/en/documents/processors/APP-for-Intel-Xeon-Processors.pdf)
+```
+GFLOPS 409.6
 
+# we have two chips, so 
+GFLOPS 409.6 * 2
+```
