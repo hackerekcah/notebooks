@@ -287,7 +287,7 @@ processor       : 1
 GFLOPS 409.6
 
 # we have two chips, so 
-GFLOPS 409.6 * 2
+GFLOPS 409.6 * 2 = 819.2 GFLOPS = 0.8192 TFLOPS
 ```
 * GFLOPS vs TFLOPS
 ```
