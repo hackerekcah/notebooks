@@ -15,12 +15,35 @@ if not os.path.isdir(my_dir):
     os.makedirs(my_dir)
 ```
 
-## 3. Listdir
+## 3. List directories and files
+### `listdir`
 ``` python
 import os
-
+# os.listdir will return a list of string, each string is the name of the directories or file. without full path
 for filename in os.listdir(directory):
     if filename.endswith(".asm") or filename.endswith(".py"): 
+```
+### [`glob.glob()`](https://docs.python.org/3/library/glob.html)
+* Return a list of all the pathnames matching a specified pattern
+```
+./
+1.gif
+2.txt
+card.gif
+|_ ./sub_folder
+    |_ 3.txt
+
+>>> import glob
+>>> glob.glob('./[0-9].*')
+['./1.gif', './2.txt']
+>>> glob.glob('*.gif')
+['1.gif', 'card.gif']
+>>> glob.glob('?.gif')
+['1.gif']
+>>> glob.glob('**/*.txt', recursive=True)
+['2.txt', 'sub/3.txt']
+>>> glob.glob('./**/', recursive=True)
+['./', './sub/']
 ```
 
 ## 4. argparse, [api](https://docs.python.org/3/library/argparse.html),[tutorial](https://docs.python.org/3/howto/argparse.html)
