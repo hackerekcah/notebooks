@@ -25,13 +25,14 @@ for filename in os.listdir(directory):
 ```
 ### [`glob.glob()`](https://docs.python.org/3/library/glob.html)
 * Return a list of all the pathnames matching a specified pattern
+* If recursive is true, the pattern “**” will match any files and zero or more directories, subdirectories and symbolic links to directories.
 ```
-./
+# current folder
 1.gif
 2.txt
 card.gif
-|_ ./sub_folder
-    |_ 3.txt
+# sub_folder
+3.txt
 
 >>> import glob
 >>> glob.glob('./[0-9].*')
