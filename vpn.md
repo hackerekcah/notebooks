@@ -16,6 +16,11 @@ http://127.0.0.1:9090/proxies
 http://127.0.0.1:9090/rules
 http://127.0.0.1:9090/configs
 ```
+* specify config
+```
+# by default is ~/.config/clash/configl.yaml
+./clash -d conf_dir
+```
 # Using VPN for python script
 * add these line, and open VNP to serve the port
 ``` python
