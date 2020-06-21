@@ -47,9 +47,14 @@ python main.py
 
 # this will have args.myflag = True
 python main.py --myfalg
-
-
 ```
+### 4.2 All arguments are associated with `action`, by default is `store`
+ * `store` simply add an attribute to the object returned by parse_args().
+```
+# same as parser.add_argument('--foo', action=store)
+parser.add_argument('--foo')
+```
+
 ## 5. [Decorator](https://www.python-course.eu/python3_decorators.php)
 * decorator is a callable object that takes `Class` or `function` as input, modifiy it, and return another `class` or `function`
 ``` python
