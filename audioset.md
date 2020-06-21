@@ -5,3 +5,6 @@
 
 ## [audiosetdl](https://github.com/marl/audiosetdl)
 * tools to download audioset
+
+## [fairseq]()
+* sequence modeling based on pytorch
