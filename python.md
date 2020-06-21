@@ -48,8 +48,12 @@ if __name__ == '__main__':
 >>> vars(args)
 {'foo': 'BAR'}
 
-# or, just look at args as a dictionary
-train(**args)
+# use case
+def parse_arguments():
+   # ...
+   # return as a dictionary
+   return vars(args)
+train(**parse_arguments())
 ```
 ### 4.1 Special care for `True` or `False` flag
 ```
