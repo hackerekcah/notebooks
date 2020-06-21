@@ -55,6 +55,13 @@ python main.py --myfalg
 parser.add_argument('--foo')
 ```
 
+### 4.3 [`add_argument`](https://docs.python.org/3/library/argparse.html#the-add-argument-method)
+```
+help - A brief description of what the argument does.
+metavar - A name for the argument in usage messages.
+dest - The name of the attribute to be added to the object returned by parse_args().
+```
+
 ## 5. [Decorator](https://www.python-course.eu/python3_decorators.php)
 * decorator is a callable object that takes `Class` or `function` as input, modifiy it, and return another `class` or `function`
 ``` python
