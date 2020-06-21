@@ -35,8 +35,21 @@ if __name__ == '__main__':
   # optional arguments
   parser.add_argument('--pooling', type = str, default = 'lin', choices = ['max', 'ave', 'lin', 'exp', 'att'])
   parser.add_argument('--dropout', type = float, default = 0.0)
+  
   args = parser.parse_args()
   run(args)
+```
+* The `Namespace` object
+```
+# parse_args() return a `arg_parse.Namespace` object
+
+>>> parser.add_argument('--foo')
+>>> args = parser.parse_args(['--foo', 'BAR'])
+>>> vars(args)
+{'foo': 'BAR'}
+
+# or, just look at args as a dictionary
+train(**args)
 ```
 ### 4.1 Special care for `True` or `False` flag
 ```
