@@ -372,4 +372,10 @@ export PYTHONPATH='/some/path'
 * will search `sys.path` for the module
 * if a package name is provided, `<pkg>.__main__` is excuted.
 
+## 17. `OrderedDict`
+* rderedDict preserves the order in which the keys are inserted.
+```
+from collections import OrderedDict
+```
+
 
