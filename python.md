@@ -99,7 +99,7 @@ parser.add_argument('--foo')
 ### 4.3 [`add_argument`](https://docs.python.org/3/library/argparse.html#the-add-argument-method)
 ```
 help - A brief description of what the argument does.
-metavar - A name for the argument in usage messages.
+metavar - A name for the argument in usage messages. (only for display)
 dest - The name of the attribute to be added to the object returned by parse_args().
 ```
 
