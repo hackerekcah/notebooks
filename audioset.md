@@ -8,5 +8,6 @@
 ## [audiosetdl](https://github.com/marl/audiosetdl)
 * tools to download audioset
 
-## [fairseq](https://github.com/pytorch/fairseq)
+# [fairseq](https://github.com/pytorch/fairseq)
 * sequence modeling based on pytorch
+* env: torch151
