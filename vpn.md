@@ -27,3 +27,9 @@ http://127.0.0.1:9090/configs
 os.environ['http_proxy'] = 'http://127.0.0.1:7890'
 os.environ['https_proxy'] = 'http://127.0.0.1:7890'
 ```
+
+## V2ray
+* [v2Box.cloud](v2box.cloud)
+  * vps provider
+* [v2rayN](https://github.com/2dust/v2rayN)
+  * windows v2ray client
