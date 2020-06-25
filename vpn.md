@@ -29,7 +29,11 @@ os.environ['https_proxy'] = 'http://127.0.0.1:7890'
 ```
 
 ## V2ray
+* [v2ray-core](https://github.com/v2ray/v2ray-core)
+* [v2ray.com](https://www.v2ray.com/)
+  *  V2Ray 可同时开启多个协议支持，包括 Socks、HTTP、Shadowsocks、VMess 等。每个协议可单独设置传输载体，比如 TCP、mKCP、WebSocket 等。
 * [v2Box.cloud](v2box.cloud)
   * vps provider
 * [v2rayN](https://github.com/2dust/v2rayN)
   * windows v2ray client
+  * vmess: a encryption protocal
