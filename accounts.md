@@ -15,3 +15,9 @@ pw: normal
 songhongwei@hit.edu.cn
 pw: no dot
 ```
+
+## apple
+```
+hackerek..@icloud
+pw: at least one capital
+```
