@@ -38,7 +38,7 @@ os.environ['https_proxy'] = 'http://127.0.0.1:7890'
 * [v2Box.cloud](v2box.cloud)
   * [vps provider]
   ```
-  https://v1.ymcb.net/api/v1/client/subscribe?token=17dbc2b4ca979c5f664dab3a8ef9040e
+  https://v2.ymcb.net/api/v1/client/subscribe?token=17dbc2b4ca979c5f664dab3a8ef9040
   ```
 
 * client
