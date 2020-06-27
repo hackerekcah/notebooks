@@ -301,3 +301,6 @@ optim.SGD([
                 {'params': model.classifier.parameters(), 'lr': 1e-3}
             ], lr=1e-2, momentum=0.9)
 ```
+
+## Multi-Node Multi-GPU Training
+* [ImageNet Examples](https://github.com/pytorch/examples/tree/master/imagenet)
