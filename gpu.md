@@ -67,3 +67,6 @@ lsmod | grep nouveau
 # may find libcuda using
 ldconfig -p |grep libcuda
 ```
+
+## [NCCL](https://developer.nvidia.com/nccl)
+* [installation guide](https://docs.nvidia.com/deeplearning/nccl/install-guide/index.html)
