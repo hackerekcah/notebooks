@@ -11,3 +11,12 @@
 # [fairseq](https://github.com/pytorch/fairseq)
 * sequence modeling based on pytorch
 * env: torch151
+## wav2vec
+* `fairseq/data/audio/raw_audio_dataset.py`
+  * default resample to 16K hz
+```
+class FileAudioDataset(RawAudioDataset):
+  self.fnames: list of files
+  # todo: a bug when resample
+  self.sizes: list of file sample size
+```
