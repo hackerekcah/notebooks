@@ -18,6 +18,27 @@
 ```
 "Must specify batch size either with --max-tokens or --max-sentences"
 ```
+* Logging
+```
+train.py
+  @metrics.aggregate("train")
+  def train(args, trainer, task, epoch_itr):
+      # log end-of-epoch stats
+    stats = get_training_stats(metrics.get_smoothed_values("train"))
+    progress.print(stats, tag="train", step=num_updates)
+
+2020-06-28 19:15:09 | INFO | train | epoch 066 | loss 2.68652 | accuracy 0.249573 | wps 378315 | ups 0.42 | wpb 895107 | bsz 895107 | num_updates 858 | lr 0.0049446 | gnorm 0.79 | clip 0 | train_wall 30 | wall 2038
+```
+```
+# Hint: Use ctrl+shift+F to search over all the project, for finding the logging code in the project
+train_wall: seconds used to train one setp (i.e., one update)
+ups: update per seconds (averaged)
+wall: total seconds used.
+wpb: word(i.e., tokens) per batch
+wps: word per second
+bsz: sentences per second, batch_size.(in wav2vec, total "examples" for binary classification)
+```
+
 * `fairseq/data/audio/raw_audio_dataset.py`
   * default resample to 16K hz
   * mean if have two channel
