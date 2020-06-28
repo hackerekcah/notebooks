@@ -378,4 +378,17 @@ export PYTHONPATH='/some/path'
 from collections import OrderedDict
 ```
 
+## 18 `@classmethod` vs `@staticmethod`
+* [see](https://www.geeksforgeeks.org/class-method-vs-static-method-python/)
+* classmethod take cls itself as arg, can change class state, will be reflected in all class instances
+```
+class C(object):
+    @classmethod
+    def fun(cls, arg1, arg2, ...):
+       ....
+
+    @staticmethod
+    def fun(arg1, arg2, ...):
+        ...
+```
 
