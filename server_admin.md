@@ -1,4 +1,37 @@
 # Server
+## mount
+* 例如在 216，安装 `sshfs`
+  ```bash
+  sudo apt-get install sshfs
+  ```
+  
+* Create empty path for mounting
+  ```bash
+  sudo mkdir /data/songhongwei/proj/fairseq
+  sudo mkdir /data/songhongwei/ESC-50/audio
+  ```
+  
+* 查看 `uid`
+  ```bash
+  cat /etc/passwd | grep songhongwei
+  ```
+
+* 远程挂载
+  ```bash
+  # mount fairseq215
+  sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.1.214:/data/songhongwei/proj/fairseq/ /data/songhongwei/proj/fairseq/
+  
+  # mount audio on 215
+  sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.1.214:/data/songhongwei/ESC-50/audio/ /data/songhongwei/ESC-50/audio/
+  
+  # 查看参数帮助
+  sshfs -h
+  ```
+  
+* 取消挂载
+  ```bash
+  sudo umount /data/songhongwei/fairseq
+  ```
 ## Server fix log
 ### 
 * 211 电源坏
