@@ -15,6 +15,14 @@ python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 
 # start jupyter server, use ip 0.0.0.0 to allow acesss from any local net 
 jupyter notebook --ip 0.0.0.0 --port=10010 --notebook-dir=/data/songhongwei/
+
+# add these lines to jupyter notebook
+%env CUDA_VISIBLE_DEVICES 2
+%pylab
+
+# shortcut to switch tabs
+shitf + ctrl + "["
+shitf + ctrl + "}"
 ```
 
 # 2. [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/)
@@ -173,5 +181,6 @@ jupyter lab
 ```
 ## 13. shortcut switch tabs in jupyter
 ```
-shitf + ctral + [ / ]
+shitf + ctrl + "["
+shitf + ctrl + "}"
 ```
