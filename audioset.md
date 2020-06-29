@@ -13,6 +13,7 @@
 * sequence modeling based on pytorch
 * [documentation](https://fairseq.readthedocs.io/en/latest/)
 * [command-line](https://fairseq.readthedocs.io/en/latest/command_line_tools.html)
+* [wav2vec](https://github.com/pytorch/fairseq/tree/master/examples/wav2vec)
 * env: torch151
 ## wav2vec
 * Parameters
