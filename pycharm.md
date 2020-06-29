@@ -1,8 +1,12 @@
 [install blog](https://itsfoss.com/install-pycharm-ubuntu/)
 
-# Install Using Snap
+# Install Using [Snap](https://snapcraft.io/docs/getting-started)
 * Snap is a packaging software since Ubuntu1604.
 * The packages dont have any dependencies.
+```
+# add /snap/bin to $PATH
+```
+export PATH="/snap/bin/:$PATH"
 ```
 # list packages installed using snap
 snap list
@@ -25,5 +29,8 @@ sudo snap install pycharm-professional --classic
 sudo snap refresh pycharm-professional
 
 # run
+pycharm-professional
+
+# run if /snap/bin is not added to $PATH
 snap run pycharm-professional
 ```
