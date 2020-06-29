@@ -2,6 +2,7 @@
 * [Data split](https://research.google.com/audioset/download.html)
 * 2w(55.55hours) balanced train and 2w balanced eval
 
+## [ESC-50](https://github.com/karolpiczak/ESC-50)
 ## [l3embedding](https://github.com/marl/l3embedding)
 * tools to train l3net
 
