@@ -1,14 +1,18 @@
 # 1.Jupyter vs Jupyter Notebook
 Jupyter Notebook is an web app, part of Jupyter project
-* Quick guide
+## Quick setup
 ```
 source activate myenv
+
 # install jupyter lab
 conda install -c conda-forge jupyterlab
+
 # set password to avoid using tokens
 jupyter notebook password
+
 # add kernel spec for env
 python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
+
 # start jupyter server, use ip 0.0.0.0 to allow acesss from any local net 
 jupyter notebook --ip 0.0.0.0 --port=10010 --notebook-dir=/data/songhongwei/
 ```
