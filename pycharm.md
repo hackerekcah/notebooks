@@ -34,3 +34,7 @@ pycharm-professional
 # run if /snap/bin is not added to $PATH
 snap run pycharm-professional
 ```
+
+## Debug slow
+* [this solution](https://stackoverflow.com/questions/39371676/debugger-times-out-at-collecting-data)
+* Enable Gevent compatible in the Python Debugger settings
