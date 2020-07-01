@@ -1,4 +1,18 @@
 # Server
+## xrdp connect to existing session
+```
+ps aux |grep Xvnc
+
+# output, process id is 6838
+songhon+  6838  0.6  0.0 179508 116956 ?       S    Jun12 171:54 Xvnc :10 -geometry 1920x1080 -depth 24 -rfbauth /home/songhongwei/.vnc/sesman_songhongwei_passwd -bs -ac -nolisten tcp -localhost -dpi 96
+
+# the first line have 6838/Xvnc, so port is 5910
+songhongwei@node04:~$ sudo netstat -putan |grep Xvnc
+tcp        0      0 127.0.0.1:5910          0.0.0.0:*               LISTEN      6838/Xvnc       
+tcp        0      0 127.0.0.1:5911          0.0.0.0:*               LISTEN      31073/Xvnc      
+tcp        0      0 127.0.0.1:5912          0.0.0.0:*               LISTEN      22962/Xvnc      
+tcp        0      0 127.0.0.1:5910          127.0.0.1:49408         ESTABLISHED 6838/Xvnc    
+```
 ## mount
 * 例如在 216，安装 `sshfs`
   ```bash
