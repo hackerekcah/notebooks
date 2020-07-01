@@ -101,7 +101,24 @@ parser.add_argument('--foo')
 help - A brief description of what the argument does.
 metavar - A name for the argument in usage messages. (only for display)
 dest - The name of the attribute to be added to the object returned by parse_args().
+default -The value produced if the argument is absent from the command line
+        optional values if not provided, default to `None`
+required - For optional args only, if `True`, then must provide
 ```
+#### 4.3.1 [`nargs`](https://docs.python.org/3/library/argparse.html#nargs)
+* `nargs=N`
+```
+parser.add_argument('--foo', nargs=2)
+# Pass `--foo a b`, will reutrn a list.
+Namespace(foo=['a', 'b'])
+
+parser.add_argument('--foo', nargs=1)
+# Pass `--foo a`, will reutrn a list even if only one provided
+Namespace(foo=['a'])
+```
+* `nargs=?`, zero or one argument
+* `nargs=*`, zero or more argument, return in a list
+* `nargs=+`, at least one argument, return in a list
 
 ## 5. [Decorator](https://www.python-course.eu/python3_decorators.php)
 * decorator is a callable object that takes `Class` or `function` as input, modifiy it, and return another `class` or `function`
