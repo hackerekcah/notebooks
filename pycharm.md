@@ -38,3 +38,8 @@ snap run pycharm-professional
 ## Debug slow
 * [this solution](https://stackoverflow.com/questions/39371676/debugger-times-out-at-collecting-data)
 * Enable Gevent compatible in the Python Debugger settings
+
+## New files not shown on Project panel, reload project using
+```
+ctrl + shift + Y
+```
