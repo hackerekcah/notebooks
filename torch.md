@@ -304,3 +304,20 @@ optim.SGD([
 
 ## Multi-Node Multi-GPU Training
 * [ImageNet Examples](https://github.com/pytorch/examples/tree/master/imagenet)
+
+## [TensorboardX](https://tensorboardx.readthedocs.io/en/latest/tutorial.html) or [torch.utils.tensorboard](https://pytorch.org/docs/stable/tensorboard.html)
+```
+def get_lr(optimizer):
+    for param_group in optimizer.param_groups:
+        return param_group['lr']
+	
+from torch.utils.tensorboard import SummaryWriter
+train_writer = SummaryWriter('{}/ckpt/{}/{}/{}'.format(ROOT_DIR, args.exp, args.ckpt_prefix, 'train'))
+valid_writer = SummaryWriter('{}/ckpt/{}/{}/{}'.format(ROOT_DIR, args.exp, args.ckpt_prefix, 'valid'))
+for epoch in ...
+	train_writer.add_scalar("loss", train_hist.recent['loss'], epoch)
+	train_writer.add_scalar("acc", train_hist.recent['acc'], epoch)
+	valid_writer.add_scalar("loss", val_hist.recent['loss'], epoch)
+	valid_writer.add_scalar("acc", val_hist.recent['acc'], epoch)
+	train_writer.add_scalar("lr", get_lr(optimizer), epoch)
+```
