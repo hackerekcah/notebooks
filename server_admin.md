@@ -44,7 +44,10 @@ tcp        0      0 127.0.0.1:5910          127.0.0.1:49408         ESTABLISHED 
   
 * 取消挂载
   ```bash
-  sudo umount /data/songhongwei/fairseq
+  sudo umount /data/songhongwei/proj/fairseq
+  
+  # sometimes fail because some file opened / used, check using list open file command. `+D` means recursive
+  lsof +D /data/songhongwei/proj/fairseq
   ```
 ## Server fix log
 ### 
