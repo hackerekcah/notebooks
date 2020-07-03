@@ -1,4 +1,13 @@
 # Server
+## softlink a lot files into one direction
+```
+# if too many files under onedir, then it will reprot long argument error
+ln -s onedir/* another_dir/
+
+# use this instead
+for i in unbalanced_train_segments/audio/*;do ln -s $i train_all_symbolic/$(basename $i);done
+```
+
 ## xrdp connect to existing session
 ```
 ps aux |grep Xvnc
