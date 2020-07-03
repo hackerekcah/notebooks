@@ -16,6 +16,41 @@
 * [wav2vec](https://github.com/pytorch/fairseq/tree/master/examples/wav2vec)
 * env: torch151
 ## wav2vec
+* Load checkpointer, validate on my dataset, dont train.
+  * command
+```
+python /data/songhongwei/proj/fairseq/fairseq_cli/validate.py \
+/data/songhongwei/audioset/env2vec/manifest/ \                        # manifest directory, containing train.tsv, valid.tsv, valid2.tsv...
+--path ... \                                                          # checkpoint path
+--valid-subset valid,valid2 \                                         #comma seperated
+--max-sentences
+--tensorboard-logdir /data/songhongwei/audioset/env2vec/${EXP_NAME}/log/ \
+--num-negatives 10 \
+--num-workers 1 --save-interval 1 \
+--arch wav2vec --task audio_pretraining --skip-connections-agg --residual-scale 0.5 --log-compression \
+--criterion binary_cross_entropy \
+--max-sample-size 160000 \
+--max-sentences 40 \
+--required-batch-size-multiple 1 \
+--skip-invalid-size-inputs-valid-test \
+--distributed-no-spawn \
+--conv-feature-layers [(512, 10, 5), (512, 8, 4), (512, 4, 2), (512, 4, 2), (512, 4, 2), (512, 1, 1), (512, 1, 1)] \
+--conv-aggregator-layers [(512, 2, 1), (512, 3, 1), (512, 4, 1), (512, 5, 1), (512, 6, 1), (512, 7, 1), (512, 8, 1), (512, 9, 1), (512, 10, 1), (512, 11, 1), (512, 12, 1), (512, 13, 1)] \
+```
+  * parameters
+```
+--restore-file [ckpt_file]
+--reset-dataloader
+```
+* Load checkpointer, finetune on my dataset
+```
+--restore-file
+--reset-dataloader
+--reset-lr-scheduler
+--reset-optimizer
+using small learning rate to finetune
+```
+
 * Parameters
 ```
 "Must specify batch size either with --max-tokens or --max-sentences"
