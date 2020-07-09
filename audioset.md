@@ -13,7 +13,8 @@
 * sequence modeling based on pytorch
 * [documentation](https://fairseq.readthedocs.io/en/latest/)
 * [command-line](https://fairseq.readthedocs.io/en/latest/command_line_tools.html)
-* [wav2vec](https://github.com/pytorch/fairseq/tree/master/examples/wav2vec)
+* [wav2vec example](https://github.com/pytorch/fairseq/tree/master/examples/wav2vec)
+* [wav2vec model](https://github.com/pytorch/fairseq/blob/master/fairseq/models/wav2vec.py)
 * env: torch151
 ## wav2vec
 * Load checkpointer, validate on my dataset, dont train.
