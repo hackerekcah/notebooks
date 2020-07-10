@@ -1,5 +1,20 @@
 # Latex (`la tech`)
 
+## [equation](https://www.latex-tutorial.com/tutorials/amsmath/)
+* Multiple Line
+```
+\begin{align*}
+  f(x) &= x^2\\
+  g(x) &= \frac{1}{x}\\
+\end{align*}
+```
+* One line equation
+```
+\begin{equation*}
+  1 = 3 - 2
+\end{equation*}
+```
+
 ## install latex and editors on windows
 * install MikTex on windows
 * MikTex is a LaTeX distribution, including `tex, latex, pdftex, pdflatex`
