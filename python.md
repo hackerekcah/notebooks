@@ -235,6 +235,17 @@ config.read(os.path.join(ROOT_DIR, config_file))
 print({section: dict(config[section]) for section in config.sections()})
 ```
 ## 10. logging
+* module logger
+``` python
+import sys
+logging.basicConfig(
+    format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+    level=logging.INFO,
+    stream=sys.stdout,
+)
+logger = logging.getLogger("env2vec.manifest")
+```
 * config logging
 ```python
 # logging.basicConfig does nothing if a handler has been set up already:
