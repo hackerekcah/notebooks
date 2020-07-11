@@ -106,6 +106,7 @@ automatically reload changes of the python files
 ```
 
 # 6. Ipython display
+* [see stanford examples](https://musicinformationretrieval.com/ipython_audio.html)
 * display audio
 ``` python
 import IPython.display as ipd
