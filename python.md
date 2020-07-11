@@ -121,6 +121,22 @@ Namespace(foo=['a'])
 * `nargs=+`, at least one argument, return in a list
 
 ## 5. [Decorator](https://www.python-course.eu/python3_decorators.php)
+* decorate classes, e.g., register architectures
+``` python
+# models.__init__.py
+ARCH_REGISTRY = dict()
+
+
+def register(cls):
+    ARCH_REGISTRY[cls.__name__] = cls
+    return cls
+
+
+from models import conv_trans, group_conv_trans
+
+
+__all__ = ["conv_trans", "group_conv_trans", "register"]
+```
 * decorator is a callable object that takes `Class` or `function` as input, modifiy it, and return another `class` or `function`
 ``` python
 def decorator(func):
