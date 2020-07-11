@@ -5,6 +5,8 @@ Jupyter Notebook is an web app, part of Jupyter project
 %env CUDA_VISIBLE_DEVICES 5
 %matplotlib inline
 %pylab
+%load_ext autoreload
+%autoreload 2
 ```
 
 ## Quick setup
