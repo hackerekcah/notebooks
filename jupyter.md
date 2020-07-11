@@ -1,5 +1,12 @@
 # 1.Jupyter vs Jupyter Notebook
 Jupyter Notebook is an web app, part of Jupyter project
+## Quick magics
+```
+%env CUDA_VISIBLE_DEVICES 5
+%matplotlib inline
+%pylab
+```
+
 ## Quick setup
 ```
 source activate myenv
