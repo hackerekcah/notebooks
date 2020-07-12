@@ -1,4 +1,12 @@
 [install blog](https://itsfoss.com/install-pycharm-ubuntu/)
+# shortcut
+```
+# Reform code, i.e., auto algn selected code
+ctrl+shit+alt+L
+
+# New files not shown on Project panel, reload project using
+ctrl + shift + Y
+```
 
 # Install Using [Snap](https://snapcraft.io/docs/getting-started)
 * Snap is a packaging software since Ubuntu1604.
@@ -39,7 +47,4 @@ snap run pycharm-professional
 * [this solution](https://stackoverflow.com/questions/39371676/debugger-times-out-at-collecting-data)
 * Enable Gevent compatible in the Python Debugger settings
 
-## New files not shown on Project panel, reload project using
-```
-ctrl + shift + Y
-```
+
