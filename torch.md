@@ -43,6 +43,7 @@ CUDA_VISIBLE_DEVICES=5 python myapp.py
 * `.apply(fn)` apply function recursively to each Modules inside
 
 ### 4.2 Define my own buffers
+* buffers won't be returned by `model.parameters()`, so won't be updated by optimizer
 ```
 # register in __init__, then can use self.my_buffer_name in forward()
 self.register_buffer('my_buffer_name', torch.tensor(3.0, dtype=torch.float))
