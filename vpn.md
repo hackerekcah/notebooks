@@ -40,9 +40,11 @@ os.environ['https_proxy'] = 'http://127.0.0.1:7890'
   ```
   https://v2.ymcb.net/api/v1/client/subscribe?token=17dbc2b4ca979c5f664dab3a8ef9040
   ```
+  * what missed? e at last
 
 * client
   * [v2rayN](https://github.com/2dust/v2rayN)
     * windows v2ray client
   * [qv2ray](https://github.com/Qv2ray/Qv2ray)
     * see [doc](https://qv2ray.github.io/en/getting-started/)
+    * [See config v2ray core](https://qv2ray.github.io/en/getting-started/step2.html#download-v2ray-core-files)
