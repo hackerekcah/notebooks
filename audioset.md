@@ -5,6 +5,7 @@
 ## [ESC-50](https://github.com/karolpiczak/ESC-50)
 ## [GTZAN](http://marsyas.info/downloads/datasets.html)
 * Music gengre classification
+## [Urbansound8K](https://urbansounddataset.weebly.com/urbansound8k.html)
 ## [l3embedding](https://github.com/marl/l3embedding)
 * tools to train l3net
 
