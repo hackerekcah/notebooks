@@ -6,6 +6,21 @@
 ## [GTZAN](http://marsyas.info/downloads/datasets.html)
 * Music gengre classification
 ## [Urbansound8K](https://urbansounddataset.weebly.com/urbansound8k.html)
+* 8732 excerpts
+```
+* classID:
+A numeric identifier of the sound class:
+0 = air_conditioner
+1 = car_horn
+2 = children_playing
+3 = dog_bark
+4 = drilling
+5 = engine_idling
+6 = gun_shot
+7 = jackhammer
+8 = siren
+9 = street_music
+```
 ## [l3embedding](https://github.com/marl/l3embedding)
 * tools to train l3net
 
