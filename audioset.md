@@ -5,6 +5,9 @@
 ## [ESC-50](https://github.com/karolpiczak/ESC-50)
 ## [GTZAN](http://marsyas.info/downloads/datasets.html)
 * Music gengre classification
+* 1000 audio tracks each 30 seconds long
+* 10 genres
+* 22050Hz Mono 16-bit audio files in .wav 
 ## [Urbansound8K](https://urbansounddataset.weebly.com/urbansound8k.html)
 * 8732 excerpts
 ```
