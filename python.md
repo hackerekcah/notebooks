@@ -449,3 +449,19 @@ class C(object):
         ...
 ```
 
+## 19 YAML format.
+* [documentation](https://pyyaml.org/wiki/PyYAMLDocumentation), the following sections are helpful.
+  * `YAML syntax`
+  * `YAML tags and Python types`
+* [Yaml syntax](https://yaml.org/spec/1.1/#id857168)
+* [Yaml cookbook](https://yaml.org/YAML_for_ruby.html)
+* install and import
+``` 
+pip install pyyaml
+import yaml
+```
+* read yaml file
+```
+cfg_dict = yaml.full_load(open(cfg_file, 'r'))
+```
+
