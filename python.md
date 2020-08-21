@@ -455,6 +455,7 @@ class C(object):
   * `YAML tags and Python types`
 * [Yaml syntax](https://yaml.org/spec/1.1/#id857168)
 * [Yaml cookbook](https://yaml.org/YAML_for_ruby.html)
+* [nice tutorial](https://rollout.io/blog/yaml-tutorial-everything-you-need-get-started/)
 * install and import
 ``` 
 pip install pyyaml
