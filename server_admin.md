@@ -40,16 +40,15 @@ tcp        0      0 127.0.0.1:5910          127.0.0.1:49408         ESTABLISHED 
   ```
 
 * 远程挂载
-  ```bash
-  # mount fairseq215
-  sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.1.214:/data/songhongwei/proj/fairseq/ /data/songhongwei/proj/fairseq/
-  
-  # mount audio on 215
-  sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.1.214:/data/songhongwei/ESC-50/audio/ /data/songhongwei/ESC-50/audio/
-  
-  # 查看参数帮助
-  sshfs -h
-  ```
+```bash
+sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.1.214:/data/songhongwei/proj/fairseq/ /data/songhongwei/proj/fairseq/
+sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.1.214:/data/songhongwei/ESC-50/audio/ /data/songhongwei/ESC-50/audio/
+sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.1.214:/data/songhongwei/dcase2018_baseline /data/songhongwei/dcase2018_baseline
+sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.1.214:/data/songhongwei/UrbanSound8K /data/songhongwei/UrbanSound8K
+sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.1.214:/data/songhongwei/gengres /data/songhongwei/gengres
+# 查看参数帮助
+sshfs -h
+```
   
 * 取消挂载
   ```bash
