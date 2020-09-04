@@ -252,6 +252,11 @@ git remote show origin
 git show <COMMIT hash>
 ```
 
+* diff modified
+```
+git diff <file_name>
+```
+
 * amend/edit last commit message(only if not pushed to remote)
 ```
 # will open text editor, can edit message
