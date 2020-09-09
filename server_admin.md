@@ -1,4 +1,13 @@
 # Server
+## wakeonlan
+```
+211 ac:1f:6b:21:d4:da
+212 ac:1f:6b:21:d4:d0
+213 ac:1f:6b:21:d4:dc
+214 ac:1f:6b:21:d4:de
+215 ac:1f:6b:21:d1:cc
+216 ac:1f:6b:21:d4:ce
+```
 ## softlink a lot files into one direction
 ```
 # if too many files under onedir, then it will reprot long argument error
