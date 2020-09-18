@@ -43,3 +43,18 @@ conda install pandas=0.18.1
 ```
 conda remove pandas
 ```
+
+* export and create
+```
+# export env
+conda env export > env.yaml
+
+# correct prefix if necessary.
+
+# on another machine
+conda env create -f env.yaml
+
+# remove env
+conda remove --name myenv --all
+
+```
