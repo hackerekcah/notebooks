@@ -1,6 +1,9 @@
 
 ## pypi 清华mirror
 ``` python
+# aliyun
+https://mirrors.aliyun.com/pypi/simple/
+
 # tstinghua pypi index mirror
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 
