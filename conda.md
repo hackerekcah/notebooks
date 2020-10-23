@@ -60,5 +60,5 @@ conda remove --name myenv --all
 # update env using yml file
 conda activate myenv
 conda env update --file local.yml
-
+conda env update --name envname--file environment.yml
 ```
