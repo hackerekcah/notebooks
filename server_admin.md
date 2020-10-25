@@ -50,6 +50,9 @@ tcp        0      0 127.0.0.1:5910          127.0.0.1:49408         ESTABLISHED 
 
 * 远程挂载
 ```bash
+211 1008
+212 1007
+215 1010
 sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/proj/fairseq/ /data/songhongwei/proj/fairseq/
 sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/proj/hcpc /data/songhongwei/proj/hcpc/
 sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/ESC-50/audio/ /data/songhongwei/ESC-50/audio/
