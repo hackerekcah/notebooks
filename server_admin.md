@@ -1,4 +1,50 @@
 # Server
+## mount
+* 远程挂载
+```bash
+211 1008
+212 1007
+215 1010
+
+# 215
+sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/proj/ /data/songhongwei/proj/
+# 212
+sudo sshfs -o allow_other,uid=1007,gid=1007 songhongwei@192.168.11.214:/data/songhongwei/proj/ /data/songhongwei/proj/
+# 211
+sudo sshfs -o allow_other,uid=1008,gid=1008 songhongwei@192.168.11.214:/data/songhongwei/proj/ /data/songhongwei/proj/
+
+sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/proj/fairseq/ /data/songhongwei/proj/fairseq/
+sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/proj/hcpc /data/songhongwei/proj/hcpc/
+sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/ESC-50/audio/ /data/songhongwei/ESC-50/audio/
+sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/dcase2018_baseline /data/songhongwei/dcase2018_baseline
+sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/UrbanSound8K /data/songhongwei/UrbanSound8K
+sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/genres /data/songhongwei/genres
+# 查看参数帮助
+sshfs -h
+```
+  
+* 取消挂载
+  ```bash
+  sudo umount /data/songhongwei/proj/fairseq
+  
+  # sometimes fail because some file opened / used, check using list open file command. `+D` means recursive
+  lsof +D /data/songhongwei/proj/fairseq
+  ```
+* 例如在 216，安装 `sshfs`
+  ```bash
+  sudo apt-get install sshfs
+  ```
+  
+* Create empty path for mounting
+  ```bash
+  sudo mkdir /data/songhongwei/proj/fairseq
+  sudo mkdir /data/songhongwei/ESC-50/audio
+  ```
+  
+* 查看 `uid`
+  ```bash
+  cat /etc/passwd | grep songhongwei
+  ```
 ## wakeonlan
 ```
 211 ac:1f:6b:21:d4:da
@@ -31,45 +77,7 @@ tcp        0      0 127.0.0.1:5911          0.0.0.0:*               LISTEN      
 tcp        0      0 127.0.0.1:5912          0.0.0.0:*               LISTEN      22962/Xvnc      
 tcp        0      0 127.0.0.1:5910          127.0.0.1:49408         ESTABLISHED 6838/Xvnc    
 ```
-## mount
-* 例如在 216，安装 `sshfs`
-  ```bash
-  sudo apt-get install sshfs
-  ```
-  
-* Create empty path for mounting
-  ```bash
-  sudo mkdir /data/songhongwei/proj/fairseq
-  sudo mkdir /data/songhongwei/ESC-50/audio
-  ```
-  
-* 查看 `uid`
-  ```bash
-  cat /etc/passwd | grep songhongwei
-  ```
 
-* 远程挂载
-```bash
-211 1008
-212 1007
-215 1010
-sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/proj/fairseq/ /data/songhongwei/proj/fairseq/
-sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/proj/hcpc /data/songhongwei/proj/hcpc/
-sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/ESC-50/audio/ /data/songhongwei/ESC-50/audio/
-sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/dcase2018_baseline /data/songhongwei/dcase2018_baseline
-sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/UrbanSound8K /data/songhongwei/UrbanSound8K
-sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/genres /data/songhongwei/genres
-# 查看参数帮助
-sshfs -h
-```
-  
-* 取消挂载
-  ```bash
-  sudo umount /data/songhongwei/proj/fairseq
-  
-  # sometimes fail because some file opened / used, check using list open file command. `+D` means recursive
-  lsof +D /data/songhongwei/proj/fairseq
-  ```
 ## Server fix log
 ### 
 * 211 电源坏
