@@ -322,3 +322,19 @@ for epoch in ...
 	valid_writer.add_scalar("acc", val_hist.recent['acc'], epoch)
 	train_writer.add_scalar("lr", get_lr(optimizer), epoch)
 ```
+## [`nn.init`](https://pytorch.org/docs/stable/nn.init.html)
+* [default for `conv`](https://github.com/pytorch/pytorch/blob/master/torch/nn/modules/conv.py#L110-L115)
+```python
+def reset_parameters(self) -> None:
+	init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+	if self.bias is not None:
+	    fan_in, _ = init._calculate_fan_in_and_fan_out(self.weight)
+	    bound = 1 / math.sqrt(fan_in)
+	    init.uniform_(self.bias, -bound, bound)
+```
+* Resnet
+``` python
+for m in self.modules():
+    if isinstance(m, nn.Conv2d):
+	nn.init.kaiming_normal_(m.weight, mode='fan_out', nonlinearity='relu')
+```
