@@ -2,10 +2,12 @@
 ## mount
 * 远程挂载
 ```bash
+221 1001
 211 1008
 212 1007
 215 1010
-
+# 221
+sudo sshfs -o allow_other,uid=1001,gid=1001 songhongwei@192.168.11.214:/data/songhongwei/proj/ /data/songhongwei/proj/
 # 215
 sudo sshfs -o allow_other,uid=1010,gid=1010 songhongwei@192.168.11.214:/data/songhongwei/proj/ /data/songhongwei/proj/
 # 212
