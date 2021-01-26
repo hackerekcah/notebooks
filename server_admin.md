@@ -392,3 +392,7 @@ Peak double-precision floating point performance (board)   1.87 Tflops
 # we have 3 Tesla K80, so
 1.87 * 3 = 5.61 TFLOPS
 ```
+## add user to the sudo group
+```
+sudo usermod -aG sudo songhongwei
+```
