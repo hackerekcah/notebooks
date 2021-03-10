@@ -89,3 +89,13 @@ jekyll serve
 # serve with live reload
 jekyll serve --livereload
 ```
+
+## Jekyll usage
+* [tutorials](https://jekyllrb.com/tutorials/video-walkthroughs/)
+* using jekythems
+```
+# _config.yml
+theme: jekyll-theme-cayman
+```
+* change default looks
+  * see github repos of the repo,e.g., [cayman](https://github.com/pages-themes/cayman), custermizing part.
