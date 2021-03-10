@@ -10,10 +10,10 @@
 
 ## [Jekyll Homepage](https://jekyllrb.com/)
 * Jekyll, ruby, gem, bundle
-  ** Jekyll is a ruby gem
-  ** Ruby is a language.
-  ** `gem` is a pakage manager for ruby programs
-  ** `bundle` manages dependencies of gems, using GemFile with required gems
+  * Jekyll is a ruby gem
+  * Ruby is a language.
+  * `gem` is a pakage manager for ruby programs
+  * `bundle` manages dependencies of gems, using GemFile with required gems
 ## [Install ruby](https://www.ruby-lang.org/en/documentation/installation/)
 ```
 # this methods may not get the newest ruby
@@ -36,7 +36,7 @@ eval "$(rbenv init -)"
 
 * `ruby-build` plugin to allow install ruby using `rbenv`
 * Install [`ruby-build`](https://github.com/rbenv/ruby-build#readme)
-  ** [requires](https://github.com/rbenv/ruby-build/wiki#suggested-build-environment): install some required packages for ruby-build to work.
+  * [requires](https://github.com/rbenv/ruby-build/wiki#suggested-build-environment): install some required packages for ruby-build to work.
 ```
 # Depending on your version of Ubuntu/Debian/Mint, libgdbm6 won't be available.
 # In that case, try an earlier version such as libgdbm5.
@@ -72,7 +72,7 @@ gem env home
 ```
 
 * Install Jekyll
-  ** For developing purpose, may install jekyll locally
+  * For developing purpose, may install jekyll locally
 ```
 gem install jekyll bundler
 
