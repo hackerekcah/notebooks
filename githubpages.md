@@ -34,7 +34,7 @@ eval "$(rbenv init -)"
  curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
 ```
 
-* `ruby-build` plugin to allow install ruby using `rbenv`
+### `ruby-build` plugin to allow install ruby using `rbenv`
 * Install [`ruby-build`](https://github.com/rbenv/ruby-build#readme)
   * [requires](https://github.com/rbenv/ruby-build/wiki#suggested-build-environment): install some required packages for ruby-build to work.
 ```
@@ -71,8 +71,9 @@ gem env home
 # => ~/.rbenv/versions/<ruby-version>/lib/ruby/gems/...
 ```
 
-* Install Jekyll
+## Install Jekyll
   * For developing purpose, may install jekyll locally
+  * Install ruby, rbenv, ruby-build first.
 ```
 gem install jekyll bundler
 
