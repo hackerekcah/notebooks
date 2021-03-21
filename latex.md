@@ -1,5 +1,9 @@
 # Latex (`la tech`)
 
+## [Support Chinese](https://www.overleaf.com/learn/latex/chinese)
+* change the compiler to `xeLatex` in MikTex console
+* use `\documentclass{ctexart}` as document class.
+
 ## [equation](https://www.latex-tutorial.com/tutorials/amsmath/)
 * Multiple Line
 ```
