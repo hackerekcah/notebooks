@@ -21,3 +21,7 @@ pw: no dot
 hackerek..@icloud
 pw: at least one capital
 ```
+
+## zoom
+gmail
+pw: at least one capital
