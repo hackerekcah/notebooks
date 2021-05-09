@@ -160,6 +160,9 @@ sudo apt-get install xrdp
 3.配置xrdp默认使用mate桌面系统
 ```
 sudo sed -i.bak '/fi/a #xrdp multiple users configuration \n mate-session \n' /etc/xrdp/startwm.sh
+
+# if remote desktop can not be connected, restart xrdp
+sudo service restart xrdp
 ```
 
 ## [IPMI Introduction by IBM](https://www.ibm.com/developerworks/cn/linux/l-ipmi/index.html)
