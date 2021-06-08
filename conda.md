@@ -67,3 +67,8 @@ conda env update --name envname--file environment.yml
 ```
 conda create --name newenv --clone oldenv
 ```
+
+* create env with pytorch python 
+```
+proxychains conda create -n myenv python pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
+```
