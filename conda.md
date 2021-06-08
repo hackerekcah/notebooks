@@ -62,3 +62,8 @@ conda activate myenv
 conda env update --file local.yml
 conda env update --name envname--file environment.yml
 ```
+
+* create env by cloning existing one
+```
+conda create --name newenv --clone oldenv
+```
