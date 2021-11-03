@@ -7,3 +7,8 @@ conda create -n torch python=3 ipython matplotlib pandas tqdm pyyaml pytorch tor
 ```
 conda install pytorch==1.8.1 torchvision==0.9.1 torchaudio==0.8.1 cudatoolkit=11.1 -c pytorch -c conda-forge -c nvidia
 ```
+
+## issue with llvmlite, make sure install llvmlite from numba channel
+```
+conda install --channel=numba llvmlite
+```
