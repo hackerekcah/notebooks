@@ -48,3 +48,6 @@ os.environ['https_proxy'] = 'http://127.0.0.1:7890'
   * [qv2ray](https://github.com/Qv2ray/Qv2ray)
     * see [doc](https://qv2ray.github.io/en/getting-started/)
     * [See config v2ray core](https://qv2ray.github.io/en/getting-started/step2.html#download-v2ray-core-files)
+    * core excutable file: /home/songhongwei/.config/qv2ray/vcore/v2ray
+    * assets directory: /home/songhongwei/.config/qv2ray/vcore/
+    * socks 7891, https 7890
